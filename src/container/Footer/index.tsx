@@ -25,19 +25,26 @@ const Footer = () => (
           </ParagrafoComponent>
           <ul>
             <li>
-              <b>Potente para seu carro</b>
+              <b>Parcelamos em até 10x</b>
             </li>
             <li>
-              <b>Potente para seu carro</b>
+              <b>Parcelamos em até 10x</b>
             </li>
             <li>
-              <b>Potente para seu carro</b>
+              <b>Parcelamos em até 10x</b>
             </li>
             <li>
-              <b>Potente para seu carro</b>
+              <b>Parcelamos em até 10x</b>
             </li>
           </ul>
-          <ButtonComponent>Whastapp</ButtonComponent>
+          <S.DivButtons>
+            <ButtonComponent link="https://fonts.google.com/">
+              Whastapp
+            </ButtonComponent>
+            <ButtonComponent link="https://fonts.google.com/">
+              Mercado Livre
+            </ButtonComponent>
+          </S.DivButtons>
         </S.InfoContent>
       </S.Content>
     </Container>

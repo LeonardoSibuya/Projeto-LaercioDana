@@ -1,15 +1,15 @@
 import styled from 'styled-components'
 
-import FotoCarro from '../../images/carros/range.png'
-
 export const Header = styled.header`
   background-color: #79a473;
-  padding: 16px 0 0;
-  background-image: url(${FotoCarro});
-  background-repeat: no-repeat;
-  background-position: right;
+  padding: 16px 0 24px;
   box-shadow: 0 0 10px 1px;
-  border-radius: 0 0px 8px 8px;
+  border-radius: 0px 0px 8px 8px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
 `
 export const Nav = styled.nav`
   display: flex;
@@ -62,23 +62,6 @@ export const Nav = styled.nav`
         :hover:after {
           width: 100%;
         }
-      }
     }
-  }
-`
-
-export const ContentText = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding: 24px 0;
-
-  p {
-    margin-top: 12px;
-    max-width: 300px;
-  }
-
-  a {
-    margin-top: 16px;
   }
 `

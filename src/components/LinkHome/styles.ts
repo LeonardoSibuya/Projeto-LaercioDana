@@ -1,17 +1,23 @@
+import { NavLink, NavLinkProps } from 'react-router-dom'
+
 import styled from 'styled-components'
 
-export const Link = styled.a`
+interface LinkStyleProps extends NavLinkProps {
+  exact?: boolean
+  activeClassName?: string
+}
+
+export const LinkStyleHome = styled(NavLink)<LinkStyleProps>`
   font-size: 20px;
   color: #000;
   font-weight: bold;
   font-family: 'Teko', sans-serif;
-  text-decoration: none;
   cursor: pointer;
-  transition: 0.3s ease;
-  letter-spacing: 1px;
+  text-decoration: none;
 
-  &:hover {
+  &.active {
     color: #fff;
+    letter-spacing: 1px;
   }
 
   @media (max-width: 1024px) {

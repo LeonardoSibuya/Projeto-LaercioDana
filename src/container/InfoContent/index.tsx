@@ -1,9 +1,10 @@
 import * as S from './styles'
 import SubtitleComponent from '../../components/Subtitle'
 import ParagrafoComponent from '../../components/Paragrafo'
-import ButtonComponent from '../../components/Button'
 
-import FotoCarro from '../../images/carros/carro-header.png'
+import imgTeste from '../../images/pecas/pecadana.png'
+
+import { ButtonProduto } from './styles'
 
 const InfoContent = () => (
   <S.InfoContainer>
@@ -18,19 +19,19 @@ const InfoContent = () => (
         ipsa iste neque. Eveniet deleniti, illo neque id quisquam recusandae
         quod?
       </ParagrafoComponent>
-      <ButtonComponent>Produtos</ButtonComponent>
+      <ButtonProduto to="/produtos">Produtos</ButtonProduto>
     </div>
     <S.ListContainer>
       <li>
-        <img src={FotoCarro} alt="" />
+        <img src={imgTeste} alt="" />
         <SubtitleComponent fontSize={16}>Dana 44 eixo 1</SubtitleComponent>
       </li>
       <li>
-        <img src={FotoCarro} alt="" />
+        <img src={imgTeste} alt="" />
         <SubtitleComponent fontSize={16}>Dana 44 eixo 1</SubtitleComponent>
       </li>
       <li>
-        <img src={FotoCarro} alt="" />
+        <img src={imgTeste} alt="" />
         <SubtitleComponent fontSize={16}>Dana 44 eixo 1</SubtitleComponent>
       </li>
     </S.ListContainer>

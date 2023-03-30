@@ -24,6 +24,8 @@ export const InfoContent = styled.div`
 
   p {
     margin-top: 12px;
+    font-weight: bold;
+    background-color: rgba(202, 202, 202, 0.33);
   }
 
   ul {
@@ -39,4 +41,10 @@ export const InfoContent = styled.div`
   a {
     margin-top: 12px;
   }
+`
+
+export const DivButtons = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
 `
