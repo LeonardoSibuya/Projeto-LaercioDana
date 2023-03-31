@@ -18,7 +18,7 @@ const HeaderAbas = () => {
               <LinkComponentHome aba="/produtos">Produtos</LinkComponentHome>
             </li>
             <li>
-              <LinkComponentHome aba="/Midias">Informações</LinkComponentHome>
+              <LinkComponentHome aba="/Midias">Mídias</LinkComponentHome>
             </li>
           </ul>
         </S.Nav>

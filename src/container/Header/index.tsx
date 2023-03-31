@@ -4,6 +4,8 @@ import ButtonComponent from '../../components/Button'
 
 import LinkComponentHome from '../../components/LinkHome'
 
+import ImageOpala from '../../images/carros/opala-ss.png'
+
 import * as S from './styles'
 import { Container } from '../../styles'
 
@@ -26,12 +28,12 @@ const Header = () => {
             </li>
             <li>
               <LinkComponentHome aba="/Midias" activeClassName="active">
-                Informações
+                Mídias
               </LinkComponentHome>
             </li>
           </ul>
         </S.Nav>
-        <div>
+        <S.ContentContainer>
           <S.ContentText>
             <TituloComponent>Somos especializados</TituloComponent>
             <TituloComponent>em eixos Dana 44</TituloComponent>
@@ -44,7 +46,10 @@ const Header = () => {
               Contato
             </ButtonComponent>
           </S.ContentText>
-        </div>
+          <div>
+            <img src={ImageOpala} alt="" />
+          </div>
+        </S.ContentContainer>
       </Container>
     </S.Header>
   )

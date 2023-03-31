@@ -12,13 +12,13 @@ export const Button = styled.a`
   font-weight: bold;
   font-family: 'Teko', sans-serif;
   cursor: pointer;
-  transition: 0.1s ease;
+  transition: 0.3s ease;
   letter-spacing: 1px;
   border: none;
   text-decoration: none;
 
   &:hover {
-    background-color: #02ca02;
+    background-color: #ff000c;
   }
 
   @media (max-width: 1024px) {

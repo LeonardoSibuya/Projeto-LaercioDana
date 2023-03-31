@@ -12,7 +12,7 @@ export const ContainerFooter = styled.div`
 export const Content = styled.div`
   display: flex;
   align-items: start;
-  justify-content: space-around;
+  justify-content: space-between;
 
   img {
     max-width: 480px;

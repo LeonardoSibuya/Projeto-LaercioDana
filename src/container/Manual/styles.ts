@@ -34,5 +34,14 @@ export const ManualContainer = styled.div`
 export const DivImage = styled.div`
   img {
     max-width: 100%;
+
+    transition: 0.5s;
+        cursor: pointer;
+
+        :hover {
+          scale: 1.1;
+          transition: 0.5s;
+        }
+      }
   }
 `

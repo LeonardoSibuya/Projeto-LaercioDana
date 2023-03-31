@@ -1,6 +1,6 @@
-import Acessorios from '../../container/Acessorios'
 import HeaderAbas from '../../container/HeaderAbas'
-import ProdutosContainer from '../../container/Produtos'
+import MidiasContainer from '../../container/Midias'
+import VideoContainer from '../../container/Video'
 
 import { Container } from '../../styles'
 
@@ -9,8 +9,8 @@ const Midias = () => {
     <>
       <HeaderAbas />
       <Container>
-        <ProdutosContainer />
-        <Acessorios />
+        <MidiasContainer />
+        <VideoContainer />
       </Container>
     </>
   )

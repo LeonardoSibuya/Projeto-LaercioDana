@@ -20,14 +20,23 @@ export const InfoContainer = styled.div`
 export const ListContainer = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 8px;
+  gap: 16px;
   text-align: center;
+  position: relative;
 
   li {
     padding: 24px 8px;
     border-radius: 8px;
-    background: linear-gradient(to bottom, rgba(46, 113, 36, 0.64), #a6c8a1);
+    background: linear-gradient(to bottom, #ed2e38, #feabb0);
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.58);
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+
+    :hover {
+      scale: 1.1;
+      transition: 0.5s;
+    }
 
     img {
       max-width: 160px;
@@ -49,13 +58,13 @@ export const ButtonProduto = styled(Link)`
   font-weight: bold;
   font-family: 'Teko', sans-serif;
   cursor: pointer;
-  transition: 0.1s ease;
+  transition: 0.3s ease;
   letter-spacing: 1px;
   border: none;
   text-decoration: none;
 
   &:hover {
-    background-color: #02ca02;
+    background-color: #ff000c;
   }
 
   @media (max-width: 1024px) {

@@ -1,11 +1,8 @@
 import styled from 'styled-components'
 
-import FotoCarro from '../../images/carros/range.png'
-
 export const Header = styled.header`
-  background-color: #79a473;
+  background: linear-gradient(to bottom, #ff000c, #F95555);
   padding: 16px 0 0;
-  background-image: url(${FotoCarro});
   background-repeat: no-repeat;
   background-position: right;
   box-shadow: 0 0 10px 1px;
@@ -15,6 +12,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 
   h1 {
     font-size: 20px;
@@ -64,6 +62,16 @@ export const Nav = styled.nav`
         }
       }
     }
+  }
+`
+
+export const ContentContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    max-width: 100%;
   }
 `
 
