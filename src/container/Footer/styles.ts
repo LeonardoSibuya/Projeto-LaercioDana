@@ -13,9 +13,36 @@ export const Content = styled.div`
   display: flex;
   align-items: start;
   justify-content: space-between;
+`
 
-  img {
-    max-width: 480px;
+export const ListCard = styled.ul`
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  max-width: 500px;
+
+  li {
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+
+    :hover {
+      flex: 0 1 60%;
+    }
+
+    img {
+      width: 200%;
+      height: 260px;
+      object-fit: cover;
+      transition: 0.6s;
+
+      :hover {
+        width: 100%;
+      }
+    }
   }
 `
 

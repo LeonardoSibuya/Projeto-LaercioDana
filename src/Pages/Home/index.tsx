@@ -1,3 +1,4 @@
+import Caracteristicas from '../../container/Caracteristicas'
 import Header from '../../container/Header'
 import InfoContent from '../../container/InfoContent'
 import Manual from '../../container/Manual'
@@ -10,6 +11,7 @@ const Home = () => {
       <Container>
         <InfoContent />
         <Manual />
+        <Caracteristicas />
       </Container>
     </>
   )

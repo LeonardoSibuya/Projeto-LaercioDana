@@ -20,28 +20,23 @@ export const InfoContainer = styled.div`
 export const ListContainer = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 16px;
+  gap: 8px;
   text-align: center;
   position: relative;
 
   li {
     padding: 24px 8px;
     border-radius: 8px;
-    background: linear-gradient(to bottom, #ed2e38, #feabb0);
+    background: linear-gradient(to left, #ed2e38, #feabb0);
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.58);
-    position: relative;
-    transition: 0.5s;
-    cursor: pointer;
 
-    :hover {
-      scale: 1.1;
-      transition: 0.5s;
+    h3 {
+      margin-bottom: 16px;
     }
 
     img {
       max-width: 160px;
       width: 100%;
-      margin-bottom: 16px;
     }
   }
 `
@@ -64,7 +59,9 @@ export const ButtonProduto = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    background-color: #ff000c;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px #000;
+    color: #000;
   }
 
   @media (max-width: 1024px) {

@@ -8,6 +8,10 @@ const EstiloGlobal = createGlobalStyle`
     list-style: none;
     font-family: 'Inter', sans-serif;
   }
+
+  body {
+    background: linear-gradient(to bottom, #eeeccc, #fff);
+  }
 `
 export default EstiloGlobal
 

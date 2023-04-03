@@ -18,7 +18,9 @@ export const Button = styled.a`
   text-decoration: none;
 
   &:hover {
-    background-color: #ff000c;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px #000;
+    color: #000;
   }
 
   @media (max-width: 1024px) {

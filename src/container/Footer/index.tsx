@@ -6,13 +6,25 @@ import * as S from './styles'
 
 import { Container } from '../../styles'
 
-import Carros from '../../images/carros/img-footer.png'
+import Dodge from '../../images/carros/dodge.jpg'
+import Opala from '../../images/carros/opala-79.jpg'
+import OpalaSs from '../../images/carros/maverick.jpg'
 
 const Footer = () => (
   <S.ContainerFooter>
     <Container>
       <S.Content>
-        <img src={Carros} alt="" />
+        <S.ListCard>
+          <li>
+            <img src={Dodge} alt="" />
+          </li>
+          <li>
+            <img src={OpalaSs} alt="" />
+          </li>
+          <li>
+            <img src={Opala} alt="" />
+          </li>
+        </S.ListCard>
         <S.InfoContent>
           <SubtitleComponent>
             Compre agora mesmo seu eixo Dana 44

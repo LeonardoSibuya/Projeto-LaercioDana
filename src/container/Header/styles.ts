@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Header = styled.header`
-  background: linear-gradient(to bottom, #ff000c, #F95555);
+  background: linear-gradient(to left, #ff000c, #F95555);
   padding: 16px 0 0;
   background-repeat: no-repeat;
   background-position: right;
@@ -71,7 +71,8 @@ export const ContentContainer = styled.div`
   justify-content: space-between;
 
   img {
-    max-width: 100%;
+    max-width: 480px;
+    width: 100%;
   }
 `
 

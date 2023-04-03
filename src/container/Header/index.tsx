@@ -5,6 +5,7 @@ import ButtonComponent from '../../components/Button'
 import LinkComponentHome from '../../components/LinkHome'
 
 import ImageOpala from '../../images/carros/opala-ss.png'
+import Maverick from '../../images/carros/maverick-sf.png'
 
 import * as S from './styles'
 import { Container } from '../../styles'
@@ -47,7 +48,7 @@ const Header = () => {
             </ButtonComponent>
           </S.ContentText>
           <div>
-            <img src={ImageOpala} alt="" />
+            <img src={Maverick} alt="" />
           </div>
         </S.ContentContainer>
       </Container>

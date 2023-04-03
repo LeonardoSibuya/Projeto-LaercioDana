@@ -4,6 +4,8 @@ import ParagrafoComponent from '../../components/Paragrafo'
 
 import imgTeste from '../../images/pecas/pecadana.png'
 
+import acessorios from '../../images/acessorios/acessorios.png'
+
 import { ButtonProduto } from './styles'
 
 const InfoContent = () => (
@@ -23,16 +25,20 @@ const InfoContent = () => (
     </div>
     <S.ListContainer>
       <li>
+        <SubtitleComponent fontSize={16}>
+          Diferencial OT-Convencional
+        </SubtitleComponent>
         <img src={imgTeste} alt="" />
-        <SubtitleComponent fontSize={16}>Dana 44 eixo 1</SubtitleComponent>
       </li>
       <li>
+        <SubtitleComponent fontSize={16}>
+          Diferencial TL-Blocante
+        </SubtitleComponent>
         <img src={imgTeste} alt="" />
-        <SubtitleComponent fontSize={16}>Dana 44 eixo 1</SubtitleComponent>
       </li>
       <li>
-        <img src={imgTeste} alt="" />
-        <SubtitleComponent fontSize={16}>Dana 44 eixo 1</SubtitleComponent>
+        <SubtitleComponent fontSize={16}>Acessórios</SubtitleComponent>
+        <img src={acessorios} alt="" />
       </li>
     </S.ListContainer>
   </S.InfoContainer>

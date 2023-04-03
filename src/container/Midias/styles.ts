@@ -20,14 +20,18 @@ export const ListImages = styled.ul`
   gap: 16px;
   position: relative;
 
+  :hover > :not(:hover) {
+    filter: blur(3px);
+  }
+
   li{
     position: relative;
-    transition: 0.5s;
+    transition: 0.35s;
     cursor: pointer;
 
     :hover {
       scale: 1.1;
-      transition: 0.5s;
+      transition: 0.35s;
     }
 
     img{
