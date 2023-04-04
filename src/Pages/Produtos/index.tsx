@@ -1,4 +1,3 @@
-import Acessorios from '../../container/Acessorios'
 import HeaderAbas from '../../container/HeaderAbas'
 import ProdutosContainer from '../../container/Produtos'
 
@@ -10,7 +9,6 @@ const Produtos = () => {
       <HeaderAbas />
       <Container>
         <ProdutosContainer />
-        <Acessorios />
       </Container>
     </>
   )

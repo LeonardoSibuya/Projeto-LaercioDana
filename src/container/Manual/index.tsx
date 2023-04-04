@@ -3,12 +3,15 @@ import SubtitleComponent from '../../components/Subtitle'
 
 import * as S from './styles'
 
-import ManualFoto from '../../images/pecas/manual-sf.png'
+import ManualConvencional from '../../images/acessorios/ot-convencional-sf.png'
+import ManualBlocante from '../../images/acessorios/tl-blocante-sf.png'
 
 const Manual = () => (
   <S.DivContent>
     <TituloComponent>Manual completo Eixos</TituloComponent>
-    <SubtitleComponent fontSize={20}>Dana 44x</SubtitleComponent>
+    <SubtitleComponent fontSize={20}>
+      Diferencial OT-Convencional
+    </SubtitleComponent>
     <S.ManualContainer>
       <S.DivList>
         <ul>
@@ -125,11 +128,11 @@ const Manual = () => (
         </ul>
       </S.DivList>
       <S.DivImage>
-        <img src={ManualFoto} alt="" />
+        <img src={ManualConvencional} alt="" />
       </S.DivImage>
     </S.ManualContainer>
 
-    <SubtitleComponent fontSize={20}>Dana 44x</SubtitleComponent>
+    <SubtitleComponent fontSize={20}>Diferencial TL-Blocante</SubtitleComponent>
     <S.ManualContainer>
       <S.DivList>
         <ul>
@@ -246,7 +249,7 @@ const Manual = () => (
         </ul>
       </S.DivList>
       <S.DivImage>
-        <img src={ManualFoto} alt="" />
+        <img src={ManualBlocante} alt="" />
       </S.DivImage>
     </S.ManualContainer>
   </S.DivContent>

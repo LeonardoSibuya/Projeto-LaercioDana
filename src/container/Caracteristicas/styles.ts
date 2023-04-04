@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const Content = styled.div`
-  margin: 80px 0;
+  margin-top: 80px;
+  margin-bottom: 160px;
 
   h2 {
     margin-bottom: 24px;

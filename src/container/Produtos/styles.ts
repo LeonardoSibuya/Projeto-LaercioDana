@@ -11,19 +11,25 @@ export const Content = styled.div`
   margin-top: 24px;
   margin-bottom: 160px;
   gap: 36px;
+
+  div {
+    width: 100%;
+  }
 `
 
 export const ImageGrande = styled.li`
   text-align: center;
-  background: linear-gradient(to left, #ed2e38, #feabb0);
+  background: linear-gradient(to bottom, #fc3a3a, #f96868, #ff7a7a, #eee);
   padding: 16px 0px;
   border-radius: 8px;
   max-width: 100%;
+  height: 160px;
   margin-bottom: 16px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.58);
 
   img {
-    max-width: 360px;
+    width: 400px;
+    height: 100%;
     transition: 0.5s;
     cursor: pointer;
 
@@ -41,15 +47,17 @@ export const ListImagePequena = styled.ul`
 
   li {
     text-align: center;
-    background: linear-gradient(to left, #ed2e38, #feabb0);
-    padding: 32px 0;
+    background: linear-gradient(to bottom, #fc3a3a, #f96868, #ff7a7a, #eee);
+    padding: 16px 0px;
     border-radius: 8px;
     max-width: 100%;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.58);
+    height: 160px;
 
     img {
-      max-width: 200px;
-      padding: 8px;
+      width: 80%;
+      height: 100%;
+      padding: 0px;
       transition: 0.5s;
       cursor: pointer;
 

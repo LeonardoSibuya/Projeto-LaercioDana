@@ -12,14 +12,14 @@ export const Button = styled.a`
   font-weight: bold;
   font-family: 'Teko', sans-serif;
   cursor: pointer;
-  transition: 0.3s ease;
-  letter-spacing: 1px;
+  transition: 0.5s ease;
   border: none;
   text-decoration: none;
+  text-transform: uppercase;
 
   &:hover {
-    background-color: #fff;
-    box-shadow: 1px 1px 4px #000;
+    background: linear-gradient(to left, #ccc, #eee, #fff);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.47);
     color: #000;
   }
 

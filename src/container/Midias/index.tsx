@@ -3,7 +3,10 @@ import ParagrafoComponent from '../../components/Paragrafo'
 import SubtitleComponent from '../../components/Subtitle'
 import TituloComponent from '../../components/Title'
 
-import Acessorio from '../../images/acessorios/acessorio-home.jpg'
+import FotoUm from '../../images/pecas/peca-um.jpeg'
+import FotoDois from '../../images/pecas/peca-insta-dois.jpeg'
+import FotoTres from '../../images/pecas/peca-insta-tres.jpeg'
+import FotoQuatro from '../../images/pecas/peca-insta-quatro.jpeg'
 
 import * as S from './styles'
 
@@ -13,16 +16,16 @@ const MidiasContainer = () => (
     <S.ImageContent>
       <S.ListImages>
         <li>
-          <img src={Acessorio} alt="" />
+          <img src={FotoUm} alt="" />
         </li>
         <li>
-          <img src={Acessorio} alt="" />
+          <img src={FotoDois} alt="" />
         </li>
         <li>
-          <img src={Acessorio} alt="" />
+          <img src={FotoTres} alt="" />
         </li>
         <li>
-          <img src={Acessorio} alt="" />
+          <img src={FotoQuatro} alt="" />
         </li>
       </S.ListImages>
       <S.infoContent>

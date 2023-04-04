@@ -6,7 +6,7 @@ import * as S from './styles'
 const VideoContainer = () => (
   <S.VideoContainer>
     <S.ContentText>
-      <SubtitleComponent>Nossas restaurações</SubtitleComponent>
+      <SubtitleComponent>Nossas peças no detalhe para você</SubtitleComponent>
       <ParagrafoComponent>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
         placeat, eos voluptatibus saepe velit eveniet consectetur, vero, et

@@ -7,7 +7,7 @@ export const ContainerFooter = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 80px 0;
+  padding-bottom: 80px;
 `
 export const Content = styled.div`
   display: flex;

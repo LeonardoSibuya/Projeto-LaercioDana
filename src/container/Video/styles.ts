@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const VideoContainer = styled.div`
-  margin-bottom: 80px;
+  margin-bottom: 160px;
   display: flex;
   align-items: start;
   justify-content: space-between;

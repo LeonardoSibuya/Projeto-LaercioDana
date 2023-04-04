@@ -2,9 +2,9 @@ import * as S from './styles'
 import SubtitleComponent from '../../components/Subtitle'
 import ParagrafoComponent from '../../components/Paragrafo'
 
-import imgTeste from '../../images/pecas/pecadana.png'
-
-import acessorios from '../../images/acessorios/acessorios.png'
+import pecaUm from '../../images/pecas/peca-um.jpeg'
+import pecaDois from '../../images/pecas/peca-dois.jpeg'
+import acessorio from '../../images/pecas/acessorio.jpeg'
 
 import { ButtonProduto } from './styles'
 
@@ -25,20 +25,22 @@ const InfoContent = () => (
     </div>
     <S.ListContainer>
       <li>
-        <SubtitleComponent fontSize={16}>
-          Diferencial OT-Convencional
-        </SubtitleComponent>
-        <img src={imgTeste} alt="" />
+        <S.LinkImg to="/produtos">
+          <SubtitleComponent>Diferencial OT-Convencional</SubtitleComponent>
+          <img src={pecaUm} alt="" />
+        </S.LinkImg>
       </li>
       <li>
-        <SubtitleComponent fontSize={16}>
-          Diferencial TL-Blocante
-        </SubtitleComponent>
-        <img src={imgTeste} alt="" />
+        <S.LinkImg to="/produtos">
+          <SubtitleComponent>Diferencial TL-Blocante</SubtitleComponent>
+          <img src={pecaDois} alt="" />
+        </S.LinkImg>
       </li>
       <li>
-        <SubtitleComponent fontSize={16}>Acessórios</SubtitleComponent>
-        <img src={acessorios} alt="" />
+        <S.LinkImg to="/produtos">
+          <SubtitleComponent>Acessórios</SubtitleComponent>
+          <img src={acessorio} alt="" />
+        </S.LinkImg>
       </li>
     </S.ListContainer>
   </S.InfoContainer>

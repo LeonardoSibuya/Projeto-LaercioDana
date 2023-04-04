@@ -18,16 +18,17 @@ export const ListImages = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  position: relative;
 
   :hover > :not(:hover) {
     filter: blur(3px);
   }
 
   li{
-    position: relative;
+
     transition: 0.35s;
     cursor: pointer;
+    width: 240px;
+    height: 240px;
 
     :hover {
       scale: 1.1;
@@ -35,7 +36,8 @@ export const ListImages = styled.ul`
     }
 
     img{
-      max-width: 240px;
+      width: 100%;
+      height: 100%;
       border-radius: 8px;
       box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.58);
     }

@@ -33,7 +33,7 @@ export const ManualContainer = styled.div`
 
 export const DivImage = styled.div`
   img {
-    max-width: 100%;
+    max-width: 480px;
 
     transition: 0.5s;
         cursor: pointer;

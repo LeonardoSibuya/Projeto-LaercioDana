@@ -18,6 +18,7 @@ export const LinkStyleHome = styled(NavLink)<LinkStyleProps>`
   &.active {
     color: #fff;
     letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #000;
   }
 
   @media (max-width: 1024px) {
