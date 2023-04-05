@@ -26,6 +26,6 @@ export const LinkStyleHome = styled(NavLink)<LinkStyleProps>`
   }
 
   @media (max-width: 768px) {
-    font-size: 12px;
+    font-size: 14px;
   }
 `

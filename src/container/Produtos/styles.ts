@@ -2,6 +2,14 @@ import styled from 'styled-components'
 
 export const divContainer = styled.div`
   padding-top: 160px;
+
+  @media (max-width: 768px) {
+    padding-top: 80px;
+
+    h2 {
+      text-align: center;
+    }
+  }
 `
 
 export const Content = styled.div`
@@ -11,6 +19,11 @@ export const Content = styled.div`
   margin-top: 24px;
   margin-bottom: 160px;
   gap: 36px;
+
+  @media (max-width: 768px) {
+    display: block;
+    margin-bottom: 80px;
+  }
 
   div {
     width: 100%;
@@ -27,11 +40,20 @@ export const ImageGrande = styled.li`
   margin-bottom: 16px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.58);
 
+  @media (max-width: 768px) {
+    padding: 8px 0px;
+    height: 120px;
+  }
+
   img {
     width: 400px;
     height: 100%;
     transition: 0.5s;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      max-width: 90%;
+    }
 
     :hover {
       scale: 1.1;
@@ -54,6 +76,11 @@ export const ListImagePequena = styled.ul`
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.58);
     height: 160px;
 
+    @media (max-width: 768px) {
+      padding: 8px 0px;
+      height: 120px;
+    }
+
     img {
       width: 80%;
       height: 100%;
@@ -71,6 +98,15 @@ export const ListImagePequena = styled.ul`
 export const InfoContent = styled.div`
   text-align: start;
 
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-top: 24px;
+
+    a {
+      margin-bottom: 16px;
+    }
+  }
+
   p {
     margin-bottom: 16px;
   }
@@ -82,6 +118,9 @@ export const InfoContent = styled.div`
 
     li {
       font-weight: bold;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
     }
   }
 `

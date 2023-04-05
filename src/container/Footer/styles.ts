@@ -8,11 +8,19 @@ export const ContainerFooter = styled.div`
   background-position: center;
   background-size: cover;
   padding-bottom: 80px;
+
+  @media (max-width: 768px) {
+    padding-bottom: 40px;
+  }
 `
 export const Content = styled.div`
   display: flex;
   align-items: start;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `
 
 export const ListCard = styled.ul`
@@ -20,6 +28,10 @@ export const ListCard = styled.ul`
   gap: 6px;
   width: 100%;
   max-width: 500px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 16px;
+  }
 
   li {
     flex: 1;
@@ -39,6 +51,10 @@ export const ListCard = styled.ul`
       object-fit: cover;
       transition: 0.6s;
 
+      @media (max-width: 768px) {
+        height: 160px;
+      }
+
       :hover {
         width: 100%;
       }
@@ -48,6 +64,11 @@ export const ListCard = styled.ul`
 
 export const InfoContent = styled.div`
   max-width: 480px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    text-align: center;
+  }
 
   p {
     margin-top: 12px;
@@ -62,6 +83,10 @@ export const InfoContent = styled.div`
 
     li {
       padding: 8px 0;
+
+      @media (max-width: 768px) {
+        font-size: 10px;
+      }
     }
   }
 
@@ -74,4 +99,8 @@ export const DivButtons = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 `

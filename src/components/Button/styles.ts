@@ -28,6 +28,6 @@ export const Button = styled.a`
   }
 
   @media (max-width: 768px) {
-    font-size: 8px;
+    font-size: 12px;
   }
 `

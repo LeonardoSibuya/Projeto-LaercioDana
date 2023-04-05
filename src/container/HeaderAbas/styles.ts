@@ -1,7 +1,15 @@
 import styled from 'styled-components'
 
 export const Header = styled.header`
-  background: linear-gradient(to left, #ff000c, #F95555);
+  background: linear-gradient(
+    to bottom,
+    #ff000c,
+    #fc2024,
+    #fc494c,
+    #ff5656,
+    #ff7070,
+    #ff9b9b
+  );
   padding: 16px 0 24px;
   box-shadow: 0 0 10px 1px;
   border-radius: 0px 0px 8px 8px;
@@ -10,6 +18,11 @@ export const Header = styled.header`
   left: 0;
   z-index: 1;
   width: 100%;
+
+  @media (max-width: 768px) {
+    padding: 6px 0;
+    margin-top: -1px;
+  }
 `
 export const Nav = styled.nav`
   display: flex;
@@ -30,7 +43,7 @@ export const Nav = styled.nav`
     }
 
     @media (max-width: 768px) {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 

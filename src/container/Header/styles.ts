@@ -1,7 +1,15 @@
 import styled from 'styled-components'
 
 export const Header = styled.header`
-  background: linear-gradient(to left, #ff000c, #F95555);
+  background: linear-gradient(
+    to bottom,
+    #ff000c,
+    #fc2024,
+    #fc494c,
+    #ff5656,
+    #ff7070,
+    #ff9b9b
+  );
   padding: 16px 0 0;
   background-repeat: no-repeat;
   background-position: right;
@@ -13,6 +21,17 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
+  @media (max-width: 768px) {
+    background: linear-gradient(to bottom, #ff000c, #fc2024);
+    padding: 6px 36px;
+    margin: -1px auto 0;
+    z-index: 3;
+    border-radius: 0 0px 8px 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 
   h1 {
     font-size: 20px;
@@ -27,7 +46,7 @@ export const Nav = styled.nav`
     }
 
     @media (max-width: 768px) {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
 
@@ -73,6 +92,10 @@ export const ContentContainer = styled.div`
   img {
     max-width: 480px;
     width: 100%;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 `
 
@@ -81,6 +104,11 @@ export const ContentText = styled.div`
   flex-direction: column;
   align-items: start;
   padding: 24px 0;
+
+  @media (max-width: 768px) {
+    display: block;
+    text-align: center;
+  }
 
   p {
     margin-top: 12px;

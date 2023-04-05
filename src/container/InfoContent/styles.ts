@@ -8,13 +8,27 @@ export const InfoContainer = styled.div`
   justify-content: space-between;
   padding-top: 80px;
 
+  @media (max-width: 768px) {
+    display: block;
+    text-align: center;
+  }
+
   p {
     max-width: 400px;
     margin-top: 12px;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+      margin-top: 12px;
+    }
   }
 
   a {
     margin-top: 16px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 32px;
+    }
   }
 `
 export const ListContainer = styled.ul`
@@ -22,8 +36,18 @@ export const ListContainer = styled.ul`
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
 
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 0 auto;
+  }
+
   :hover > :not(:hover) {
     filter: blur(1.8px);
+
+    @media (max-width: 768px) {
+      filter: none;
+    }
   }
 
   li {
@@ -31,6 +55,10 @@ export const ListContainer = styled.ul`
     max-width: 180px;
     transition: 0.35s;
     cursor: pointer;
+
+    @media (max-width: 768px) {
+      margin: 0 auto 32px;
+    }
 
     :hover {
       scale: 1.1;
@@ -47,12 +75,22 @@ export const LinkImg = styled(Link)`
     height: 100%;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.58);
     border-radius: 8px;
+
+    @media (max-width: 768px) {
+      width: 160px;
+      height: 160px;
+      margin-top: 8px;
+    }
   }
 
   h3 {
     font-size: 16px;
     padding: 0;
     text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 `
 
@@ -85,6 +123,6 @@ export const ButtonProduto = styled(Link)`
   }
 
   @media (max-width: 768px) {
-    font-size: 8px;
+    font-size: 12px;
   }
 `

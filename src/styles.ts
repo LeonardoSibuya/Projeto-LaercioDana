@@ -10,7 +10,7 @@ const EstiloGlobal = createGlobalStyle`
   }
 
   body {
-    background: linear-gradient(to bottom, #eeeccc, #fff);
+    background: linear-gradient(to bottom, #eee, #fff);
   }
 `
 export default EstiloGlobal

@@ -13,6 +13,6 @@ export const Title = styled.h2<Props>`
   }
 
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 22px;
   }
 `
