@@ -2,9 +2,9 @@ import * as S from './styles'
 import SubtitleComponent from '../../components/Subtitle'
 import ParagrafoComponent from '../../components/Paragrafo'
 
-import pecaUm from '../../images/pecas/peca-um.jpeg'
+import pecaUm from '../../images/pecas/peca-dois-nova.png'
 import pecaDois from '../../images/pecas/peca-nova.png'
-import acessorio from '../../images/pecas/acessorio.jpeg'
+import acessorio from '../../images/pecas/acessorio-novo.png'
 
 import { ButtonProduto } from './styles'
 
