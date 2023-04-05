@@ -3,7 +3,7 @@ import SubtitleComponent from '../../components/Subtitle'
 import ParagrafoComponent from '../../components/Paragrafo'
 
 import pecaUm from '../../images/pecas/peca-um.jpeg'
-import pecaDois from '../../images/pecas/peca-dois.jpeg'
+import pecaDois from '../../images/pecas/peca-nova.png'
 import acessorio from '../../images/pecas/acessorio.jpeg'
 
 import { ButtonProduto } from './styles'
@@ -47,5 +47,3 @@ const InfoContent = () => (
 )
 
 export default InfoContent
-
-//teste
