@@ -3,10 +3,10 @@ import ParagrafoComponent from '../../components/Paragrafo'
 import SubtitleComponent from '../../components/Subtitle'
 import TituloComponent from '../../components/Title'
 
-import FotoUm from '../../images/pecas/peca-um.jpeg'
-import FotoDois from '../../images/pecas/peca-insta-dois.jpeg'
-import FotoTres from '../../images/pecas/peca-insta-tres.jpeg'
-import FotoQuatro from '../../images/pecas/peca-insta-quatro.jpeg'
+import FotoUm from '../../images/pecas/peca-dois-nova.png'
+import FotoDois from '../../images/pecas/peca-insta-tres-nova.png'
+import FotoTres from '../../images/pecas/peca-insta-dois-nova.png'
+import FotoQuatro from '../../images/pecas/peca-insta-quatro-nova.png'
 
 import * as S from './styles'
 
