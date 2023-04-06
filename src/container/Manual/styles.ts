@@ -15,6 +15,10 @@ export const DivContent = styled.div`
   h3 {
     margin-bottom: 12px;
 
+    @media (max-width: 1024px) {
+      text-align: center;
+    }
+
     @media (max-width: 768px) {
       text-align: center;
     }
@@ -29,6 +33,12 @@ export const ManualContainer = styled.div`
   margin-bottom: 160px;
   height: 660px;
 
+  @media (max-width: 1024px) {
+    display: block;
+    margin: 0 auto 560px;
+    height: 400px;
+  }
+
   @media (max-width: 768px) {
     display: block;
     height: 400px;
@@ -39,12 +49,31 @@ export const ManualContainer = styled.div`
 export const DivImage = styled.div`
   max-width: 100%;
 
+  @media (max-width: 1024px) {
+    width: 100%;
+    max-height: 70%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
+
   img {
     width: 520px;
     height: 100%;
 
+    @media (max-width: 1024px) {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      text-align: center;
+      margin: 32px auto 0;
+      }
+
     @media (max-width: 768px) {
     max-width: 100%;
+    max-height: 100%;
     display: block;
     text-align: center;
     margin: 24px auto 0;
@@ -68,6 +97,10 @@ export const TabelaContainer = styled.div`
   border: 1px solid #666666;
   border-radius: 8px;
 
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
   ::-webkit-scrollbar {
     width: 8px;
     border: 1px solid #000;
@@ -87,6 +120,10 @@ export const Tabela = styled.table`
   overflow-x: scroll;
   position: relative;
 
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
   thead {
     position: sticky;
     width: 100%;
@@ -101,6 +138,10 @@ export const Tabela = styled.table`
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #000;
+
+      @media (max-width: 1024px) {
+        padding: 12px 4px;
+      }
 
       @media (max-width: 768px) {
         padding: 8px 4px;

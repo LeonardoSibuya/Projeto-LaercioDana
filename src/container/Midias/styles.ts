@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const MidiaContainer = styled.div`
   padding-top: 160px;
 
+  @media (max-width: 1024px) {
+    padding-top: 80px;
+  }
+
   @media (max-width: 768px) {
     padding-top: 80px;
   }
@@ -18,6 +22,10 @@ export const ImageContent = styled.div`
   width: 100%;
   margin 24px 0 160px;
 
+  @media (max-width: 1024px) {
+    display: block;
+  }
+
   @media (max-width: 768px) {
     display: block;
     margin-bottom: 80px;
@@ -27,6 +35,10 @@ export const ListImages = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 24px;
+  }
 
   @media (max-width: 768px) {
     margin-bottom: 24px;
@@ -45,6 +57,11 @@ export const ListImages = styled.ul`
     cursor: pointer;
     width: 240px;
     height: 240px;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      max-height: 100%;
+    }
 
     @media (max-width: 768px) {
       width: 100%;
@@ -67,6 +84,12 @@ export const ListImages = styled.ul`
 `
 export const infoContent = styled.div`
   max-width: 480px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
 
   @media (max-width: 768px) {
     width: 100%;

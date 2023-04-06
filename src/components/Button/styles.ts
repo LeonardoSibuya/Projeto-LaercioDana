@@ -24,7 +24,7 @@ export const Button = styled.a`
   }
 
   @media (max-width: 1024px) {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   @media (max-width: 768px) {

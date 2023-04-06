@@ -8,6 +8,11 @@ export const InfoContainer = styled.div`
   justify-content: space-between;
   padding-top: 80px;
 
+  @media (max-width: 1024px) {
+    display: block;
+    text-align: center;
+  }
+
   @media (max-width: 768px) {
     display: block;
     text-align: center;
@@ -16,6 +21,11 @@ export const InfoContainer = styled.div`
   p {
     max-width: 400px;
     margin-top: 12px;
+
+    @media (max-width: 1024px) {
+      max-width: 100%;
+      margin-top: 12px;
+    }
 
     @media (max-width: 768px) {
       max-width: 100%;
@@ -26,6 +36,10 @@ export const InfoContainer = styled.div`
   a {
     margin-top: 16px;
 
+    @media (max-width: 1024px) {
+      margin-bottom: 32px;
+    }
+
     @media (max-width: 768px) {
       margin-bottom: 32px;
     }
@@ -35,6 +49,11 @@ export const ListContainer = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
+
+  @media (max-width: 1024px) {
+    gap: 8px;
+    align-items: center;
+  }
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -55,6 +74,10 @@ export const ListContainer = styled.ul`
     max-width: 180px;
     transition: 0.35s;
     cursor: pointer;
+
+    @media (max-width: 1024px) {
+      margin: 0 auto;
+    }
 
     @media (max-width: 768px) {
       margin: 0 auto 32px;

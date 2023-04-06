@@ -9,6 +9,10 @@ export const ContainerFooter = styled.div`
   background-size: cover;
   padding-bottom: 80px;
 
+  @media (max-width: 1024px) {
+    padding-bottom: 40px;
+  }
+
   @media (max-width: 768px) {
     padding-bottom: 40px;
   }
@@ -17,6 +21,10 @@ export const Content = styled.div`
   display: flex;
   align-items: start;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
 
   @media (max-width: 768px) {
     display: block;
@@ -28,6 +36,12 @@ export const ListCard = styled.ul`
   gap: 6px;
   width: 100%;
   max-width: 500px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
 
   @media (max-width: 768px) {
     margin-bottom: 16px;
@@ -65,6 +79,12 @@ export const ListCard = styled.ul`
 export const InfoContent = styled.div`
   max-width: 480px;
 
+  @media (max-width: 1024px) {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
   @media (max-width: 768px) {
     width: 100%;
     text-align: center;
@@ -99,6 +119,10 @@ export const DivButtons = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 
   @media (max-width: 768px) {
     justify-content: center;

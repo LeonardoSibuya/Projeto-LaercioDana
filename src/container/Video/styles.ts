@@ -6,6 +6,10 @@ export const VideoContainer = styled.div`
   align-items: start;
   justify-content: space-between;
 
+  @media (max-width: 1024px) {
+    display: block;
+  }
+
   @media (max-width: 768px) {
     display: block;
     margin-bottom: 80px;
@@ -14,6 +18,12 @@ export const VideoContainer = styled.div`
 
 export const ContentText = styled.div`
   max-width: 480px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 24px;
+  }
 
   @media (max-width: 768px) {
     width: 100%;
@@ -29,9 +39,16 @@ export const ContentVideo = styled.div`
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.58);
     border: none;
 
+    @media (max-width: 1024px) {
+      width: 100%;
+      max-height: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+
     @media (max-width: 768px) {
       width: 100%;
-      height: 100%;
+      max-height: 100%;
     }
   }
 `

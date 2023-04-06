@@ -4,6 +4,10 @@ export const Content = styled.div`
   margin-top: 80px;
   margin-bottom: 160px;
 
+  @media (max-width: 1024px) {
+    text-align: center;
+  }
+
   @media (max-width: 768px) {
     text-align: center;
   }

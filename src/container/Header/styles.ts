@@ -18,10 +18,27 @@ export const Header = styled.header`
   box-shadow: 0 0 10px 1px;
   border-radius: 0 0px 8px 8px;
 
+  @media (max-width: 1024px) {
+    background-image: url(${BgCarro});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    h2 {
+      color: #fff;
+      padding-top: 6px;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+
   @media (max-width: 768px) {
     background-image: url(${BgCarro});
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
     h2 {
       color: #fff;
@@ -38,6 +55,25 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+
+  @media (max-width: 1024px) {
+    background: linear-gradient(
+      to bottom,
+      #ff000c,
+      #fc2024,
+      #fc494c,
+      #ff5656,
+      #ff7070,
+      #ff9b9b
+    );
+    padding: 8px 80px;
+    margin: -1px auto 0px;
+    z-index: 3;
+    border-radius: 0 0px 8px 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 
   @media (max-width: 768px) {
     background: linear-gradient(
@@ -67,7 +103,7 @@ export const Nav = styled.nav`
     text-shadow: 1px 1px 1px #000;
 
     @media (max-width: 1024px) {
-      font-size: 14px;
+      font-size: 16px;
     }
 
     @media (max-width: 768px) {
@@ -118,6 +154,10 @@ export const ContentContainer = styled.div`
     max-width: 480px;
     width: 100%;
 
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
     @media (max-width: 768px) {
       display: none;
     }
@@ -129,6 +169,12 @@ export const ContentText = styled.div`
   flex-direction: column;
   align-items: start;
   padding: 24px 0;
+
+  @media (max-width: 1024px) {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
 
   @media (max-width: 768px) {
     display: block;
@@ -142,6 +188,23 @@ export const ContentText = styled.div`
 
   a {
     margin-top: 16px;
+
+    @media (max-width: 1024px) {
+      background: linear-gradient(
+        to bottom,
+        #ff000c,
+        #fc2024,
+        #fc494c,
+        #ff5656,
+        #ff7070,
+        #ff9b9b
+      );
+      text-shadow: 1px 1px 1px #000;
+    }
+
+    :hover {
+      text-shadow: none;
+    }
 
     @media (max-width: 768px) {
       background: linear-gradient(

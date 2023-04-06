@@ -19,6 +19,11 @@ export const Header = styled.header`
   z-index: 1;
   width: 100%;
 
+  @media (max-width: 1024px) {
+    padding: 8px 0;
+    margin-top: -1px;
+  }
+
   @media (max-width: 768px) {
     padding: 6px 0;
     margin-top: -1px;
@@ -39,7 +44,7 @@ export const Nav = styled.nav`
     text-shadow: 1px 1px 1px #000;
 
     @media (max-width: 1024px) {
-      font-size: 14px;
+      font-size: 16px;
     }
 
     @media (max-width: 768px) {

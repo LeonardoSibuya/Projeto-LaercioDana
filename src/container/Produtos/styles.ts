@@ -3,6 +3,14 @@ import styled from 'styled-components'
 export const divContainer = styled.div`
   padding-top: 160px;
 
+  @media (max-width: 1024px) {
+    padding-top: 80px;
+
+    h2 {
+      text-align: center;
+    }
+  }
+
   @media (max-width: 768px) {
     padding-top: 80px;
 
@@ -19,6 +27,10 @@ export const Content = styled.div`
   margin-top: 24px;
   margin-bottom: 160px;
   gap: 36px;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
 
   @media (max-width: 768px) {
     display: block;
@@ -40,6 +52,11 @@ export const ImageGrande = styled.li`
   margin-bottom: 16px;
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.58);
 
+  @media (max-width: 1024px) {
+    padding: 6px 0px;
+    height: 160px;
+  }
+
   @media (max-width: 768px) {
     padding: 8px 0px;
     height: 120px;
@@ -50,6 +67,10 @@ export const ImageGrande = styled.li`
     height: 100%;
     transition: 0.5s;
     cursor: pointer;
+
+    @media (max-width: 1024px) {
+      width: 80%;
+    }
 
     @media (max-width: 768px) {
       max-width: 90%;
@@ -76,6 +97,11 @@ export const ListImagePequena = styled.ul`
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.58);
     height: 160px;
 
+    @media (max-width: 1024px) {
+      padding: 6px 0px;
+      height: 160px;
+    }
+
     @media (max-width: 768px) {
       padding: 8px 0px;
       height: 120px;
@@ -97,6 +123,14 @@ export const ListImagePequena = styled.ul`
 `
 export const InfoContent = styled.div`
   text-align: start;
+
+  @media (max-width: 1024px) {
+    text-align: center;
+    margin-top: 24px;
+
+    a {
+      margin-bottom: 16px;
+    }
 
   @media (max-width: 768px) {
     text-align: center;
