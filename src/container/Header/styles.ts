@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import BgCarro from '../../images/carros/bg-carro-gimp.jpg'
+import BgCarro from '../../images/carros/bg-carro-gimp-claro.jpg'
 
 export const Header = styled.header`
   background: linear-gradient(
