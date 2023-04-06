@@ -16,7 +16,7 @@ const VideoContainer = () => (
     </S.ContentText>
     <S.ContentVideo>
       <iframe
-        src="https://www.youtube.com/embed/QDpaipOAZlY"
+        src="https://www.youtube.com/embed/dBstoyIhAsI"
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
