@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import BgCarro from '../../images/carros/bg-carro-gimp.jpg'
+
 export const Header = styled.header`
   background: linear-gradient(
     to bottom,
@@ -15,6 +17,21 @@ export const Header = styled.header`
   background-position: right;
   box-shadow: 0 0 10px 1px;
   border-radius: 0 0px 8px 8px;
+
+  @media (max-width: 768px) {
+    background-image: url(${BgCarro});
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h2 {
+      color: #fff;
+      padding-top: 6px;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
 `
 export const Nav = styled.nav`
   display: flex;
@@ -23,9 +40,17 @@ export const Nav = styled.nav`
   width: 100%;
 
   @media (max-width: 768px) {
-    background: linear-gradient(to bottom, #ff000c, #fc2024);
+    background: linear-gradient(
+      to bottom,
+      #ff000c,
+      #fc2024,
+      #fc494c,
+      #ff5656,
+      #ff7070,
+      #ff9b9b
+    );
     padding: 6px 36px;
-    margin: -1px auto 0;
+    margin: -1px auto 0px;
     z-index: 3;
     border-radius: 0 0px 8px 8px;
     position: fixed;
@@ -117,5 +142,22 @@ export const ContentText = styled.div`
 
   a {
     margin-top: 16px;
+
+    @media (max-width: 768px) {
+      background: linear-gradient(
+        to bottom,
+        #ff000c,
+        #fc2024,
+        #fc494c,
+        #ff5656,
+        #ff7070,
+        #ff9b9b
+      );
+      text-shadow: 1px 1px 1px #000;
+    }
+
+    :hover {
+      text-shadow: none;
+    }
   }
 `
