@@ -20,12 +20,10 @@ export const Header = styled.header`
   width: 100%;
 
   @media (max-width: 1024px) {
-    padding: 8px 0;
     margin-top: -1px;
   }
 
   @media (max-width: 768px) {
-    padding: 6px 0;
     margin-top: -1px;
   }
 `

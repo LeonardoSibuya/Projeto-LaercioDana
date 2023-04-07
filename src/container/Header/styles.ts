@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import BgCarro from '../../images/carros/bg-carro-gimp-claro.jpg'
+import BgCarro from '../../images/carros/opala-bg.jpg'
 
 export const Header = styled.header`
   background: linear-gradient(
@@ -25,12 +25,13 @@ export const Header = styled.header`
     background-size: cover;
 
     h2 {
-      color: #fff;
+      color: #000;
       padding-top: 6px;
     }
 
     p {
-      color: #fff;
+      color: #000;
+      font-weight: bold;
     }
   }
 
@@ -41,12 +42,13 @@ export const Header = styled.header`
     background-size: cover;
 
     h2 {
-      color: #fff;
+      color: #000;
       padding-top: 6px;
     }
 
     p {
-      color: #fff;
+      color: #000;
+      font-weight: bold;
     }
   }
 `
@@ -57,41 +59,8 @@ export const Nav = styled.nav`
   width: 100%;
 
   @media (max-width: 1024px) {
-    background: linear-gradient(
-      to bottom,
-      #ff000c,
-      #fc2024,
-      #fc494c,
-      #ff5656,
-      #ff7070,
-      #ff9b9b
-    );
-    padding: 8px 80px;
-    margin: -1px auto 0px;
-    z-index: 3;
-    border-radius: 0 0px 8px 8px;
-    position: fixed;
-    top: 0;
-    left: 0;
+    background-color: rgba(252, 73, 76, 0.09);
   }
-
-  @media (max-width: 768px) {
-    background: linear-gradient(
-      to bottom,
-      #ff000c,
-      #fc2024,
-      #fc494c,
-      #ff5656,
-      #ff7070,
-      #ff9b9b
-    );
-    padding: 6px 36px;
-    margin: -1px auto 0px;
-    z-index: 3;
-    border-radius: 0 0px 8px 8px;
-    position: fixed;
-    top: 0;
-    left: 0;
   }
 
   h1 {
@@ -135,6 +104,7 @@ export const Nav = styled.nav`
         :hover {
           color: #fff;
           transition: 0.2s ease;
+          text-shadow: 1px 1px 1px #000;
         }
 
         :hover:after {
@@ -188,39 +158,5 @@ export const ContentText = styled.div`
 
   a {
     margin-top: 16px;
-
-    @media (max-width: 1024px) {
-      background: linear-gradient(
-        to bottom,
-        #ff000c,
-        #fc2024,
-        #fc494c,
-        #ff5656,
-        #ff7070,
-        #ff9b9b
-      );
-      text-shadow: 1px 1px 1px #000;
-    }
-
-    :hover {
-      text-shadow: none;
-    }
-
-    @media (max-width: 768px) {
-      background: linear-gradient(
-        to bottom,
-        #ff000c,
-        #fc2024,
-        #fc494c,
-        #ff5656,
-        #ff7070,
-        #ff9b9b
-      );
-      text-shadow: 1px 1px 1px #000;
-    }
-
-    :hover {
-      text-shadow: none;
-    }
   }
 `
