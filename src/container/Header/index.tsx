@@ -4,7 +4,6 @@ import ButtonComponent from '../../components/Button'
 
 import LinkComponentHome from '../../components/LinkHome'
 
-import ImageOpala from '../../images/carros/opala-ss.png'
 import Maverick from '../../images/carros/maverick-sf.png'
 
 import * as S from './styles'
@@ -15,7 +14,7 @@ const Header = () => {
     <S.Header>
       <Container>
         <S.Nav>
-          <h1>LaercioDana</h1>
+          <h1>LR-eixos44</h1>
           <ul>
             <li>
               <LinkComponentHome exact aba="/" activeClassName="active">
@@ -37,11 +36,10 @@ const Header = () => {
         <S.ContentContainer>
           <S.ContentText>
             <TituloComponent>Somos especializados</TituloComponent>
-            <TituloComponent>em eixos Dana 44</TituloComponent>
+            <TituloComponent>em eixos Dana</TituloComponent>
             <ParagrafoComponent>
-              Lorem ipsum dolor sit met consectetur adipisicing elit. Obcaecati
-              dignissimos ad, dolorem eum nemo quos non. Optio, minus nulla
-              quidem
+              Vendemos eixos diferencial e seus componentes, trabalhamos com
+              Spicer, Dana, rolamentos Tinken e retentores sabó para eixos.
             </ParagrafoComponent>
             <ButtonComponent link={'https://fonts.google.com/'}>
               Contato

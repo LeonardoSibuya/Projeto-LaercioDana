@@ -16,27 +16,31 @@ const MidiasContainer = () => (
     <S.ImageContent>
       <S.ListImages>
         <li>
-          <img src={FotoUm} alt="" />
+          <img src={FotoUm} alt="imagem eixo diferencial" />
         </li>
         <li>
-          <img src={FotoDois} alt="" />
+          <img src={FotoDois} alt="imagem eixo diferencial" />
         </li>
         <li>
-          <img src={FotoTres} alt="" />
+          <img src={FotoTres} alt="imagem eixo diferencial" />
         </li>
         <li>
-          <img src={FotoQuatro} alt="" />
+          <img src={FotoQuatro} alt="imagem eixo diferencial" />
         </li>
       </S.ListImages>
       <S.infoContent>
-        <SubtitleComponent>@laercioEixo44</SubtitleComponent>
+        <SubtitleComponent>@lr44dana</SubtitleComponent>
         <ParagrafoComponent>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-          consequuntur libero odio nulla modi id facere, voluptate unde ratione
-          incidunt harum consectetur sunt? Eos, magnam qui. Facere non
-          laudantium natus.
+          Se você está em busca de um eixo diferencial Dana para equipar o seu
+          veículo, então precisa seguir o nosso perfil no Instagram! Lá, você
+          encontrará diversas opções de eixos, com garantia de qualidade. Não
+          perca a oportunidade de adquirir os melhores eixos do mercado e
+          melhorar o desempenho do seu carro. Siga-nos agora mesmo e entre em
+          contato.
         </ParagrafoComponent>
-        <ButtonComponent link="teste">Instagram</ButtonComponent>
+        <ButtonComponent link="https://www.instagram.com/lr44dana/">
+          Instagram
+        </ButtonComponent>
       </S.infoContent>
     </S.ImageContent>
   </S.MidiaContainer>

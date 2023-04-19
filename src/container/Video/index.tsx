@@ -8,10 +8,11 @@ const VideoContainer = () => (
     <S.ContentText>
       <SubtitleComponent>Nossas peças no detalhe para você</SubtitleComponent>
       <ParagrafoComponent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-        placeat, eos voluptatibus saepe velit eveniet consectetur, vero, et
-        quibusdam similique voluptas quia laudantium provident? Neque harum
-        autem iste! Pariatur, veritatis.
+        Aqui você pode conferir detalhes dos eixos diferencial, incluindo os
+        componentes. Com imagens em alta definição, é possível ver cada
+        componente claramente e compreender como funcionam. Não perca a chance
+        de conhecer melhor essas peças essenciais para o seu veículo. Confira
+        agora mesmo!
       </ParagrafoComponent>
     </S.ContentText>
     <S.ContentVideo>

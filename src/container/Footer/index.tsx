@@ -27,33 +27,33 @@ const Footer = () => (
         </S.ListCard>
         <S.InfoContent>
           <SubtitleComponent>
-            Compre agora mesmo seu eixo Dana 44
+            Compre agora mesmo seu eixo Dana
           </SubtitleComponent>
           <ParagrafoComponent>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
-            perferendis itaque quod delectus ipsa voluptate. Impedit quia
-            tenetur eligendi, eius veritatis cumque minima perspiciatis.
-            Laboriosam eius dolores natus obcaecati consequuntur.
+            Oferecemos atendimento e vendas através do WhatsApp e do Mercado
+            Livre. No entanto, por meio do Mercado Livre, as taxas da plataforma
+            serão acrescidas ao valor do produto. Estamos prontos para fornecer
+            a melhor solução para suas necessidades.
           </ParagrafoComponent>
           <ul>
             <li>
               <b>Parcelamos em até 10x</b>
             </li>
             <li>
-              <b>Parcelamos em até 10x</b>
+              <b>Retirada a combinar</b>
             </li>
             <li>
-              <b>Parcelamos em até 10x</b>
+              <b>São José dos Campos - SP</b>
             </li>
             <li>
-              <b>Parcelamos em até 10x</b>
+              <b>(11) 97102-7474</b>
             </li>
           </ul>
           <S.DivButtons>
             <ButtonComponent link="https://fonts.google.com/">
               Whastapp
             </ButtonComponent>
-            <ButtonComponent link="https://fonts.google.com/">
+            <ButtonComponent link="https://www.mercadolivre.com.br/perfil/LAERCIO.COM">
               Mercado Livre
             </ButtonComponent>
           </S.DivButtons>

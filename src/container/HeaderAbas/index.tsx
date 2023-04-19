@@ -9,7 +9,7 @@ const HeaderAbas = () => {
     <S.Header>
       <Container>
         <S.Nav>
-          <h1>LaercioDana</h1>
+          <h1>LR-eixos44</h1>
           <ul>
             <li>
               <LinkComponentHome aba="/">Início</LinkComponentHome>

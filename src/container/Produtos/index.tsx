@@ -39,18 +39,17 @@ const ProdutosContainer = () => (
       <S.InfoContent>
         <SubtitleComponent>Eixo OT-Convencional</SubtitleComponent>
         <ParagrafoComponent>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          inventore ad, quaerat eaque quidem reprehenderit dolorum iusto nostrum
-          illum rerum eveniet, ea, architecto nemo. Nostrum reprehenderit rerum
-          deserunt minima amet.
+          Se você busca alto desempenho, resistência, qualidade e segurança para
+          seu carro clássico, o Dana 44 é a escolha certa! Compre agora mesmo e
+          faça história no mundo dos carros antigos!
         </ParagrafoComponent>
-        <ul>
-          <li>teste</li>
-          <li>teste</li>
-          <li>teste</li>
-          <li>teste</li>
-        </ul>
-        <S.Preco>R$ 1000,00</S.Preco>
+        <S.ListInfo>
+          <li>100% Original</li>
+          <li>Classico</li>
+          <li>Resistência</li>
+          <li>Segurança</li>
+        </S.ListInfo>
+        <S.Preco>R$ 9.200,00</S.Preco>
         <S.Parcela>em até 10x</S.Parcela>
         <ButtonComponent link="https://fonts.google.com/">
           Comprar
@@ -62,18 +61,21 @@ const ProdutosContainer = () => (
       <S.InfoContent>
         <SubtitleComponent>Eixo TL-Blocante</SubtitleComponent>
         <ParagrafoComponent>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          inventore ad, quaerat eaque quidem reprehenderit dolorum iusto nostrum
-          illum rerum eveniet, ea, architecto nemo. Nostrum reprehenderit rerum
-          deserunt minima amet.
+          Se você possui um carro clássico e deseja melhorar a aderência e a
+          estabilidade em curvas, o diferencial blocante é o componente ideal. O
+          blocante permite que as rodas traseiras girem juntas, distribuindo a
+          potência de forma mais uniforme e evitando que uma roda escorregue
+          enquanto a outra permanece parada. Compre agora mesmo seu diferencial
+          blocante e transforme seu carro clássico em uma máquina de alta
+          performance!
         </ParagrafoComponent>
-        <ul>
-          <li>teste</li>
-          <li>teste</li>
-          <li>teste</li>
-          <li>teste</li>
-        </ul>
-        <S.Preco>R$ 1000,00</S.Preco>
+        <S.ListInfo>
+          <li>Tração melhorada</li>
+          <li>Estabilidade em curvas</li>
+          <li>Rodas acopladas</li>
+          <li>Potência uniforme</li>
+        </S.ListInfo>
+        <S.Preco>R$ 12.400,00</S.Preco>
         <S.Parcela>em até 10x</S.Parcela>
         <ButtonComponent link="https://fonts.google.com/">
           Comprar
@@ -96,7 +98,7 @@ const ProdutosContainer = () => (
       </div>
     </S.Content>
 
-    <TituloComponent>Acessórios</TituloComponent>
+    <TituloComponent>Componentes</TituloComponent>
     <S.Content>
       <div>
         <ul>
@@ -115,16 +117,14 @@ const ProdutosContainer = () => (
       </div>
       <S.InfoContent>
         <SubtitleComponent>
-          Acessórios completos para eixo dana 44
+          Todos os componentes para seu eixo diferencial
         </SubtitleComponent>
         <ParagrafoComponent>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-          inventore ad, quaerat eaque quidem reprehenderit dolorum iusto nostrum
-          illum rerum eveniet, ea, architecto nemo. Nostrum reprehenderit rerum
-          deserunt minima amet.
-        </ParagrafoComponent>
-        <ParagrafoComponent>
-          Nos chame em nosso WhatsApp para consultar disponibilidade, e valores.
+          Oferecemos uma ampla variedade de peças para o seu eixo diferencial.
+          Entre em contato conosco agora mesmo para consultar a disponibilidade
+          e os melhores preços das peças que você precisa. Estamos prontos para
+          ajudá-lo a encontrar as peças certas para o seu veículo e garantir a
+          máxima qualidade e segurança em sua condução.
         </ParagrafoComponent>
         <ButtonComponent link="https://fonts.google.com/">
           Contatar

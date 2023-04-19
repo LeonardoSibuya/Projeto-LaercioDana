@@ -12,14 +12,12 @@ const InfoContent = () => (
   <S.InfoContainer>
     <div>
       <SubtitleComponent>
-        Aqui você encontra eixos de qualidade
+        Aqui você encontra os melhores eixos
       </SubtitleComponent>
-      <SubtitleComponent>e acessórios completos</SubtitleComponent>
+      <SubtitleComponent>do mercado, Convencional e Blocante</SubtitleComponent>
       <ParagrafoComponent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-        molestiae aut quam nobis blanditiis? Dignissimos facere aut dicta nobis
-        ipsa iste neque. Eveniet deleniti, illo neque id quisquam recusandae
-        quod?
+        Trabalhamos com os modelos de eixo 44 Convencional e Blocante, 100%
+        novos e originais Dana, e também vendemos cada um de seus componentes.
       </ParagrafoComponent>
       <ButtonProduto to="/produtos">Produtos</ButtonProduto>
     </div>
@@ -27,19 +25,19 @@ const InfoContent = () => (
       <li>
         <S.LinkImg to="/produtos">
           <SubtitleComponent>Diferencial OT-Convencional</SubtitleComponent>
-          <img src={pecaUm} alt="" />
+          <img src={pecaUm} alt="Imagem eixo diferencial" />
         </S.LinkImg>
       </li>
       <li>
         <S.LinkImg to="/produtos">
           <SubtitleComponent>Diferencial TL-Blocante</SubtitleComponent>
-          <img src={pecaDois} alt="" />
+          <img src={pecaDois} alt="Imagem eixo diferencial" />
         </S.LinkImg>
       </li>
       <li>
         <S.LinkImg to="/produtos">
-          <SubtitleComponent>Acessórios</SubtitleComponent>
-          <img src={acessorio} alt="" />
+          <SubtitleComponent>Componentes</SubtitleComponent>
+          <img src={acessorio} alt="Imagem componente" />
         </S.LinkImg>
       </li>
     </S.ListContainer>

@@ -25,12 +25,12 @@ export const Header = styled.header`
     background-size: cover;
 
     h2 {
-      color: #000;
+      color: #fff;
       padding-top: 6px;
     }
 
     p {
-      color: #000;
+      color: #fff;
       font-weight: bold;
     }
   }
@@ -42,12 +42,12 @@ export const Header = styled.header`
     background-size: cover;
 
     h2 {
-      color: #000;
+      color: #fff;
       padding-top: 6px;
     }
 
     p {
-      color: #000;
+      color: #fff;
       font-weight: bold;
     }
   }
@@ -57,10 +57,6 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-
-  @media (max-width: 1024px) {
-    background-color: rgba(252, 73, 76, 0.09);
-  }
   }
 
   h1 {
@@ -73,10 +69,12 @@ export const Nav = styled.nav`
 
     @media (max-width: 1024px) {
       font-size: 16px;
+      color: #fff;
     }
 
     @media (max-width: 768px) {
       font-size: 14px;
+      color: #fff;
     }
   }
 
@@ -90,6 +88,14 @@ export const Nav = styled.nav`
       position: relative;
 
       a {
+      @media (max-width: 1024px) {
+      color: #fff;
+      }
+
+      @media (max-width: 768px) {
+        color: #fff;
+      }
+
         :after {
           content: '';
           position: absolute;
@@ -144,11 +150,21 @@ export const ContentText = styled.div`
     display: block;
     text-align: center;
     margin: 0 auto;
+
+    a {
+      margin-top: 16px;
+      background-color: #ce1616;
+    }
   }
 
   @media (max-width: 768px) {
     display: block;
     text-align: center;
+
+    a {
+      margin-top: 16px;
+      background-color: #ce1616;
+    }
   }
 
   p {

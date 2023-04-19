@@ -35,14 +35,14 @@ export const ManualContainer = styled.div`
 
   @media (max-width: 1024px) {
     display: block;
-    margin: 0 auto 560px;
+    margin: 0 auto 640px;
     height: 400px;
   }
 
   @media (max-width: 768px) {
     display: block;
     height: 400px;
-    margin-bottom: 340px;
+    margin-bottom: 400px;
   }
 `
 

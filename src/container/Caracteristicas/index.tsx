@@ -12,10 +12,11 @@ const Caracteristicas = () => (
         Não acompanha conjunto de freio e suportes de fixação da suspensão
       </li>
       <li>Relação 3,07:1</li>
-      <li>Tipo convencional (sem blocante)</li>
+      <li>Tipo convencional e blocante</li>
       <li>Semi-flutuante</li>
       <li>
-        Furação de roda 5 furos, Diâmetro 114,3mm, Incluso prisioneiros de roda
+        Furação de roda 5 furos, Diâmetro 114,3mm, não Incluso prisioneiros de
+        roda
       </li>
       <li>Distância entre flanges de freio 1302,80mm</li>
       <li>

@@ -124,6 +124,10 @@ export const ListImagePequena = styled.ul`
 export const InfoContent = styled.div`
   text-align: start;
 
+  a {
+    margin-top: 16px;
+  }
+
   @media (max-width: 1024px) {
     text-align: center;
     margin-top: 24px;
@@ -144,20 +148,21 @@ export const InfoContent = styled.div`
   p {
     margin-bottom: 16px;
   }
-
-  ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-
-    li {
-      font-weight: bold;
-
-      @media (max-width: 768px) {
-        font-size: 12px;
-    }
-  }
 `
+export const ListInfo = styled.ul`
+margin-top: 12px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 12px;
+
+li {
+  font-weight: bold;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+}
+`
+
 export const Preco = styled.h3`
   font-size: 16px;
   margin: 16px 0 2px;
@@ -165,7 +170,6 @@ export const Preco = styled.h3`
 `
 export const Parcela = styled.p`
   font-size: 12px;
-  margin-bottom: 16px;
   color: cacaca;
   font-style: italic;
 `
