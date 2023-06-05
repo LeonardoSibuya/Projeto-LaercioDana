@@ -1,18 +1,11 @@
-import Caracteristicas from '../../container/Caracteristicas'
-import Header from '../../container/Header'
-import InfoContent from '../../container/InfoContent'
-import Manual from '../../container/Manual'
-import { Container } from '../../styles'
+import Banner from '../../components/Banner'
+import Sidebar from '../../components/Sidebar'
 
 const Home = () => {
   return (
     <>
-      <Header />
-      <Container>
-        <InfoContent />
-        <Manual />
-        <Caracteristicas />
-      </Container>
+      <Banner />
+      <Sidebar />
     </>
   )
 }

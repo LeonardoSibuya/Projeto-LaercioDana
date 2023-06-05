@@ -8,20 +8,15 @@ const EstiloGlobal = createGlobalStyle`
     list-style: none;
     font-family: 'Inter', sans-serif;
   }
-
-  body {
-    background: linear-gradient(to bottom, #eee, #fff);
-  }
 `
 export default EstiloGlobal
 
 export const Container = styled.div`
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
 
-    @media (max-width: 1024px) {
-      max-width: 80%;
-    }
+  @media (max-width: 1024px) {
+    max-width: 80%;
   }
 `
