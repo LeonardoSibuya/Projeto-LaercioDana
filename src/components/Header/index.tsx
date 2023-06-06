@@ -3,9 +3,9 @@ import { RootReducer } from '../../store'
 
 import * as S from './styles'
 
-import buttonMenu from '../../images/icons/menu.png'
-
 import { open } from '../../store/reducers/asideBar'
+
+import logo from '../../images/logo-laercio.png'
 
 const Header = () => {
   const dispatch = useDispatch()
@@ -18,10 +18,14 @@ const Header = () => {
 
   return (
     <S.HeaderContainer>
-      <h1>LR EIXOS</h1>
-      <span className={isOpen ? 'is-hidden' : ''}>
-        <img src={buttonMenu} alt="botão do menu" onClick={openMenu} />
-      </span>
+      <h1>
+        <img src={logo} alt="LR Eixos" />
+      </h1>
+      <div className={isOpen ? 'is-hidden' : ''} onClick={openMenu}>
+        <span />
+        <span />
+        <span />
+      </div>
     </S.HeaderContainer>
   )
 }

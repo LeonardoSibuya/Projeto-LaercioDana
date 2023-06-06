@@ -1,16 +1,17 @@
 import styled from 'styled-components'
 
 import banner from '../../images/carros/opala-capo.jpg'
-import { Container } from '../../styles'
+import { Colors, Container } from '../../styles'
 
 export const BannerContent = styled.div`
   background-image: url(${banner});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 600px;
+  height: 640px;
   position: relative;
-  padding-top: 24px;
+  padding-top: 32px;
+  box-shadow: 0px 4px 8px #000;
 
   .overlay {
     position: absolute;
@@ -34,13 +35,15 @@ export const Content = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 80px auto 140px;
-  max-width: 660px;
+  margin: 80px auto;
+  max-width: 100%;
   width: 100%;
 
   h2 {
     font-weight: bold;
-    font-size: 32px;
+    font-size: 56px;
+    letter-spacing: 1px;
+    font-family: 'Teko', sans-serif;
   }
 
   p {
@@ -66,8 +69,15 @@ export const ListIcons = styled.ul`
   justify-content: center;
   gap: 8px;
 
+  li {
+    border-radius: 50%;
+    background-color: ${Colors.white};
+    width: 36px;
+    height: 36px;
+  }
+
   img {
-    max-width: 32px;
+    max-width: 36px;
     width: 100%;
   }
 `

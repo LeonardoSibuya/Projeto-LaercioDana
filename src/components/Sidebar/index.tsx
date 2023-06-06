@@ -10,6 +10,7 @@ import homeIcon from '../../images/icons/home.png'
 import cart from '../../images/icons/add.png'
 import info from '../../images/icons/information.png'
 import faq from '../../images/icons/faq.png'
+import logo from '../../images/logo-laercio.png'
 
 const Sidebar = () => {
   const dispatch = useDispatch()
@@ -25,7 +26,7 @@ const Sidebar = () => {
       <S.Overlay onClick={closeAside} />
       <S.SideBarContainer>
         <S.ContainerTitle>
-          <h2>LR EIXOS</h2>
+          <img src={logo} alt="LR Eixos" />
           <span>
             <img src={closeIcon} alt="Botão fechar menu" onClick={closeAside} />
           </span>

@@ -4,9 +4,9 @@ import { Container } from '../../styles'
 import ButtonComponent from '../Button'
 import Header from '../../components/Header'
 
-import instagramIcon from '../../images/icons/Instagram-icon.png'
-import whatsappIcon from '../../images/icons/wpp-icon.png'
-import outlookIcon from '../../images/icons/outlook-icon.png'
+import instagramIcon from '../../images/icons/instagram.png'
+import whatsappIcon from '../../images/icons/whatsapp.png'
+import outlookIcon from '../../images/icons/outlook.png'
 
 const Banner = () => {
   return (

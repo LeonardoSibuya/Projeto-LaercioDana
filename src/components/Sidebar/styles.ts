@@ -1,12 +1,14 @@
 import styled from 'styled-components'
 
+import { Colors } from '../../styles'
+
 export const Overlay = styled.div`
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: ${Colors.black};
   opacity: 0.7;
 `
 
@@ -26,12 +28,15 @@ export const ContentDiv = styled.div`
 `
 
 export const SideBarContainer = styled.aside`
-  border-radius: 0 10px 10px 0;
-  max-width: 360px;
+  border-radius: 0 16px 16px 0;
+  max-width: 280px;
   width: 100%;
   z-index: 1;
-  padding: 24px 24px 0;
-  background-image: linear-gradient(#0d1520, #00060f);
+  padding: 32px 24px 0;
+  background-image: linear-gradient(
+    ${Colors.darkBlueOne},
+    ${Colors.darkBlueTwo}
+  );
   box-shadow: 1px 1px 1px #000;
   position: relative;
 
@@ -51,7 +56,11 @@ export const SideBarContainer = styled.aside`
 
         &:hover {
           border-radius: 16px;
-          background-image: linear-gradient(to left, #8db1bf, #5c7f8c);
+          background-image: linear-gradient(
+            to left,
+            ${Colors.lightBlue},
+            ${Colors.gray}
+          );
           background-color: lightblue;
           padding: 6px;
           transition: 0.5s ease;
@@ -76,11 +85,12 @@ export const ContainerTitle = styled.div`
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
   font-weight: bold;
 
-  h2 {
-    font-size: 24px;
+  img {
+    width: 48px;
+    max-width: 100%;
   }
 
   span {
@@ -99,7 +109,7 @@ export const ContactContainer = styled.div`
   align-items: center;
   position: absolute;
   bottom: 0;
-  left: 100px;
+  left: 60px;
   padding-bottom: 16px;
 
   a {

@@ -1,38 +1,36 @@
 import styled from 'styled-components'
 
+import { Colors } from '../../styles'
+
 export const HeaderContainer = styled.div`
   text-align: center;
-  background-image: linear-gradient(to right, #0f151c, #0b0d0e);
-  padding: 24px 0;
-  color: #fff;
   position: relative;
-  width: 680px;
-  border-radius: 80px;
-  margin: 0 auto;
-  box-shadow: 0px 3px 6px #000;
 
   h1 {
-    padding: 4px;
-    width: 100%;
-    max-width: 160px;
-    text-align: center;
-    margin: 0 auto;
+    img {
+      width: 140px;
+      max-width: 100%;
+    }
   }
 
-  span {
+  div {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 32px 40px 0;
+    padding-top: 32px;
+    cursor: pointer;
 
     &.is-hidden {
       display: none;
     }
 
-    img {
+    span {
       width: 32px;
-      height: 32px;
-      cursor: pointer;
+      height: 4px;
+      background-color: ${Colors.white};
+      display: block;
+      margin: 4px 0;
+      border-radius: 16px;
     }
   }
 `
