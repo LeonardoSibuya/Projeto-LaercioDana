@@ -1,4 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 import * as S from './styles'
 
@@ -11,6 +13,7 @@ import cart from '../../images/icons/add.png'
 import info from '../../images/icons/information.png'
 import faq from '../../images/icons/faq.png'
 import logo from '../../images/logo-laercio.png'
+import { useEffect } from 'react'
 
 const Sidebar = () => {
   const dispatch = useDispatch()
@@ -21,8 +24,12 @@ const Sidebar = () => {
     dispatch(close())
   }
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 })
+  }, [isOpen])
+
   return (
-    <S.ContentDiv className={isOpen ? 'is-visible' : ''}>
+    <S.ContentDiv className={isOpen ? 'is-visible' : ''} data-aos="fade-right">
       <S.Overlay onClick={closeAside} />
       <S.SideBarContainer>
         <S.ContainerTitle>

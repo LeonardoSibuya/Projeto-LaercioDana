@@ -14,10 +14,11 @@ export const HeaderContainer = styled.div`
   }
 
   div {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     padding-top: 32px;
+    padding-left: 32px;
     cursor: pointer;
 
     &.is-hidden {

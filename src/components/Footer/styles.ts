@@ -61,6 +61,13 @@ export const ListSocials = styled.ul`
     width: 36px;
     height: 36px;
 
+    transition: 0.5s ease;
+
+    &:hover {
+      transition: 0.5s ease;
+      transform: scale(1.1);
+    }
+
     a {
       text-decoration: none;
 
