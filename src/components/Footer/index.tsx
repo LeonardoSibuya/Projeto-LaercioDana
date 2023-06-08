@@ -3,7 +3,7 @@ import * as S from './styles'
 import { Container } from '../../styles'
 
 import logo from '../../images/logo-laercio.png'
-import instagram from '../../images/icons/Instagram.png'
+import instagram from '../../images/icons/instagram.png'
 import whatsapp from '../../images/icons/whatsapp.png'
 import outlook from '../../images/icons/outlook.png'
 
