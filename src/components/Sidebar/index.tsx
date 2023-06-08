@@ -28,6 +28,10 @@ const Sidebar = () => {
     AOS.init({ duration: 1000 })
   }, [isOpen])
 
+  useEffect(() => {
+    dispatch(close())
+  }, [dispatch])
+
   return (
     <S.ContentDiv className={isOpen ? 'is-visible' : ''} data-aos="fade-right">
       <S.Overlay onClick={closeAside} />
@@ -40,28 +44,28 @@ const Sidebar = () => {
         </S.ContainerTitle>
         <ul>
           <li>
-            <a href="#">
+            <S.LinkItem to="/">
               <img src={homeIcon} alt="" />
               Pagina Inicial
-            </a>
+            </S.LinkItem>
           </li>
           <li>
-            <a href="#">
+            <S.LinkItem to="/produtos">
               <img src={cart} alt="" />
               Produtos
-            </a>
+            </S.LinkItem>
           </li>
           <li>
-            <a href="#">
+            <S.LinkItem to="">
               <img src={info} alt="" />
               Especificações
-            </a>
+            </S.LinkItem>
           </li>
           <li>
-            <a href="#">
+            <S.LinkItem to="">
               <img src={faq} alt="" />
               Dúvidas
-            </a>
+            </S.LinkItem>
           </li>
         </ul>
         <S.ContactContainer>

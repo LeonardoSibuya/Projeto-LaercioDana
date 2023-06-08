@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { Colors } from '../../styles'
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.header`
   text-align: center;
   position: relative;
 

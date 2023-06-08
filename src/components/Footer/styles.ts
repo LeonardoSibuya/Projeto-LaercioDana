@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import { Colors } from '../../styles'
+import { Link } from 'react-router-dom'
 
 export const Footer = styled.footer`
-  background-color: #070606;
+  background-color: ${Colors.black};
   margin-top: 160px;
   padding: 60px 0 24px;
   box-shadow: -6px 0 6px #000;
@@ -39,14 +40,14 @@ export const ListLinks = styled.ul`
   li {
     margin: 16px 0;
     text-align: center;
-
-    a {
-      text-decoration: none;
-      color: ${Colors.white};
-      font-weight: bold;
-      font-size: 14px;
-    }
   }
+`
+
+export const LinkItems = styled(Link)`
+  text-decoration: none;
+  color: ${Colors.white};
+  font-weight: bold;
+  font-size: 14px;
 `
 
 export const ListSocials = styled.ul`

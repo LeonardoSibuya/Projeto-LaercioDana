@@ -15,16 +15,16 @@ const Footer = () => (
         <S.ListLinks>
           <h4>Acesse</h4>
           <li>
-            <a href="">Página inicial</a>
+            <S.LinkItems to="/">Página inicial</S.LinkItems>
           </li>
           <li>
-            <a href="">Produtos</a>
+            <S.LinkItems to="/produtos">Produtos</S.LinkItems>
           </li>
           <li>
-            <a href="">Informações técnicas</a>
+            <S.LinkItems to="">Informações técnicas</S.LinkItems>
           </li>
           <li>
-            <a href="">Dúvidas</a>
+            <S.LinkItems to="">Dúvidas</S.LinkItems>
           </li>
         </S.ListLinks>
         <S.ListSocials>

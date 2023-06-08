@@ -22,23 +22,31 @@ const ProductsHome = () => {
     <Container>
       <S.DivTitle>
         <Subtitle>Eixos e componentes disponíveis agora!</Subtitle>
-        <ButtonComponent link="/">Conferir</ButtonComponent>
+        <ButtonComponent type="page" to="/produtos">
+          Conferir
+        </ButtonComponent>
       </S.DivTitle>
       <S.ContentList>
         <li data-aos="zoom-in-up">
-          <S.TextImg>TL Blocante</S.TextImg>
-          <img src={eixoBlocante} alt="Peça de carro eixo blocante" />
-          <span>Compre agora</span>
+          <S.LinkItems to="/produtos">
+            <S.TextImg>TL Blocante</S.TextImg>
+            <img src={eixoBlocante} alt="Peça de carro eixo blocante" />
+            <span>Compre agora</span>
+          </S.LinkItems>
         </li>
         <li data-aos="zoom-in-up">
-          <S.TextImg>OT Convencional</S.TextImg>
-          <img src={eixoConvencional} alt="Peça de carro eixo blocante" />
-          <span>Compre agora</span>
+          <S.LinkItems to="/produtos">
+            <S.TextImg>OT Convencional</S.TextImg>
+            <img src={eixoConvencional} alt="Peça de carro eixo blocante" />
+            <span>Compre agora</span>
+          </S.LinkItems>
         </li>
         <li data-aos="zoom-in-up">
-          <S.TextImg>Componentes</S.TextImg>
-          <img src={acessorio} alt="Peça de carro eixo blocante" />
-          <span>Compre agora</span>
+          <S.LinkItems to="/produtos">
+            <S.TextImg>Componentes</S.TextImg>
+            <img src={acessorio} alt="Peça de carro eixo blocante" />
+            <span>Compre agora</span>
+          </S.LinkItems>
         </li>
       </S.ContentList>
     </Container>

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Colors } from '../../styles'
 
-export const Content = styled.div`
+export const Content = styled.section`
   margin-top: 160px;
 
   h3 {

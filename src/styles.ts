@@ -7,7 +7,8 @@ export const Colors = {
 
   gray: '#5c7f8c',
   white: '#fff',
-  black: '#000'
+  black: '#000',
+  cyan: '#099e76'
 }
 
 const EstiloGlobal = createGlobalStyle`

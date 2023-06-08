@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Colors } from '../../styles'
+import { Link } from 'react-router-dom'
 
 export const DivTitle = styled.div`
   margin: 160px 0 24px;
@@ -23,6 +24,45 @@ export const TextImg = styled.h4`
   font-family: 'Teko', sans-serif;
 `
 
+export const LinkItems = styled(Link)`
+  span {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    background-color: ${Colors.lightBlue};
+    color: ${Colors.white};
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+    width: 60%;
+    border-radius: 24px;
+    letter-spacing: 1px;
+  }
+
+  &:hover {
+    transition: 0.5s ease;
+    transform: scale(1.1);
+
+    span {
+      display: none;
+    }
+
+    ${TextImg} {
+      display: block;
+      transition: 0.5s ease;
+      z-index: 1;
+    }
+
+    img {
+      opacity: 0.15;
+      transition: 0.5s ease;
+    }
+  }
+`
+
 export const ContentList = styled.ul`
   display: flex;
   align-items: center;
@@ -34,43 +74,6 @@ export const ContentList = styled.ul`
     position: relative;
     cursor: pointer;
     transition: 0.5s ease;
-
-    span {
-      position: absolute;
-      bottom: 10%;
-      left: 50%;
-      transform: translate(-50%, 0%);
-
-      background-color: ${Colors.lightBlue};
-      color: ${Colors.white};
-      font-size: 16px;
-      font-weight: bold;
-      padding: 8px;
-      text-align: center;
-      width: 60%;
-      border-radius: 24px;
-      letter-spacing: 1px;
-    }
-
-    &:hover {
-      transition: 0.5s ease;
-      transform: scale(1.1);
-
-      span {
-        display: none;
-      }
-
-      ${TextImg} {
-        display: block;
-        transition: 0.5s ease;
-        z-index: 1;
-      }
-
-      img {
-        opacity: 0.15;
-        transition: 0.5s ease;
-      }
-    }
   }
 
   img {

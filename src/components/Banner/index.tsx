@@ -21,7 +21,9 @@ const Banner = () => {
               Dana, rolamentos Tinken e retentores sabó para eixos. <br />
               Vendemos também seus componentes separadamente.
             </p>
-            <ButtonComponent link="/">Entrar em contato</ButtonComponent>
+            <ButtonComponent link="/" type={'link'}>
+              Entrar em contato
+            </ButtonComponent>
           </S.Content>
           <S.ListIcons>
             <li>

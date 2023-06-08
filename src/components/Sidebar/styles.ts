@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import { Colors } from '../../styles'
+import { Link } from 'react-router-dom'
 
 export const Overlay = styled.div`
   position: absolute;
@@ -43,40 +44,40 @@ export const SideBarContainer = styled.aside`
   ul {
     li {
       margin: 16px 0;
-
-      a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        transition: 0.5s ease;
-        letter-spacing: 1px;
-
-        &:hover {
-          border-radius: 16px;
-          background-image: linear-gradient(
-            to left,
-            ${Colors.lightBlue},
-            ${Colors.gray}
-          );
-          background-color: lightblue;
-          padding: 6px;
-          transition: 0.5s ease;
-          color: #000;
-          font-weight: bold;
-        }
-
-        img {
-          width: 24px;
-          height: 24px;
-          max-width: 100%;
-          max-height: 100%;
-          border-radius: 50%;
-        }
-      }
     }
+  }
+`
+
+export const LinkItem = styled(Link)`
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: 0.5s ease;
+  letter-spacing: 1px;
+
+  &:hover {
+    border-radius: 16px;
+    background-image: linear-gradient(
+      to left,
+      ${Colors.lightBlue},
+      ${Colors.gray}
+    );
+    background-color: lightblue;
+    padding: 6px;
+    transition: 0.5s ease;
+    color: #000;
+    font-weight: bold;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
   }
 `
 

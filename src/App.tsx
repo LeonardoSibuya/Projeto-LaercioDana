@@ -1,24 +1,20 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-// import Header from './container/Header'
-// import Footer from './container/Footer'
-
 import Home from './Pages/Home'
-// import Midias from './Pages/Midias'
-// import Produtos from './Pages/Produtos'
 import EstiloGlobal from './styles'
 import { Provider } from 'react-redux'
 import { store } from './store'
+import Products from './Pages/Products'
 
 const rotas = createBrowserRouter([
   {
     path: '/',
     element: <Home />
+  },
+  {
+    path: '/produtos',
+    element: <Products />
   }
-  // {
-  //   path: '/produtos',
-  //   element: <Produtos />
-  // },
   // {
   //   path: '/midias',
   //   element: <Midias />
