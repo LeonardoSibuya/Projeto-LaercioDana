@@ -4,6 +4,7 @@ import Loader from '../../components/Loader'
 import Sidebar from '../../components/Sidebar'
 import HeaderSecondayPages from '../../components/HeaderSecondaryPages'
 import Footer from '../../components/Footer'
+import Carousel from '../../components/Carousel'
 
 const Products = () => {
   const [showLoader, setShowLoader] = useState(true)
@@ -24,6 +25,7 @@ const Products = () => {
         <>
           <HeaderSecondayPages titlePage="Produtos" />
           <Sidebar />
+          <Carousel />
           <Footer />
         </>
       )}
