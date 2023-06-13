@@ -56,9 +56,9 @@ const Sidebar = () => {
             </S.LinkItem>
           </li>
           <li>
-            <S.LinkItem to="">
+            <S.LinkItem to="/manual">
               <img src={info} alt="" />
-              Especificações
+              Manual
             </S.LinkItem>
           </li>
           <li>

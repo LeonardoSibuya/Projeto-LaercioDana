@@ -2,9 +2,13 @@ import styled from 'styled-components'
 import { Colors } from '../../styles'
 import { Link } from 'react-router-dom'
 
-export const Footer = styled.footer`
+type MarginTopFooter = {
+  marginTop: string
+}
+
+export const Footer = styled.footer<MarginTopFooter>`
   background-color: ${Colors.black};
-  margin-top: 160px;
+  margin-top: ${(props) => props.marginTop};
   padding: 60px 0 24px;
   box-shadow: -6px 0 6px #000;
 
@@ -48,6 +52,13 @@ export const LinkItems = styled(Link)`
   color: ${Colors.white};
   font-weight: bold;
   font-size: 14px;
+  transition: 0.5s ease;
+
+  &:hover {
+    color: ${Colors.gray};
+    letter-spacing: 1px;
+    transition: 0.5s ease;
+  }
 `
 
 export const ListSocials = styled.ul`

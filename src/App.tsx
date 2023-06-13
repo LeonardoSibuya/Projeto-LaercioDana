@@ -5,6 +5,7 @@ import EstiloGlobal from './styles'
 import { Provider } from 'react-redux'
 import { store } from './store'
 import Products from './Pages/Products'
+import Info from './Pages/Info'
 
 const rotas = createBrowserRouter([
   {
@@ -14,11 +15,11 @@ const rotas = createBrowserRouter([
   {
     path: '/produtos',
     element: <Products />
+  },
+  {
+    path: '/manual',
+    element: <Info />
   }
-  // {
-  //   path: '/midias',
-  //   element: <Midias />
-  // }
 ])
 
 function App() {

@@ -31,7 +31,7 @@ const Mock: PropsProducts[] = [
     imageTwo: `${blocanteDois}`,
     imageThree: `${blocanteTres}`,
     externalLink: 'https://br.pinterest.com/pin/440930619784257841/',
-    pageLink: '/',
+    pageLink: '/manual',
     price: 'R$ 12.400,00',
     oldPrice: 'R$ 13.000,00',
     dataAos: 'zoom-out-down'
@@ -45,7 +45,7 @@ const Mock: PropsProducts[] = [
     imageTwo: `${convencionalDois}`,
     imageThree: `${convencionalTres}`,
     externalLink: 'https://br.pinterest.com/pin/440930619784257841/',
-    pageLink: '/',
+    pageLink: '/manual',
     price: 'R$ R$ 9.200,00',
     oldPrice: 'R$ 10.000,00',
     dataAos: 'zoom-out-down'
@@ -59,7 +59,7 @@ const Mock: PropsProducts[] = [
     imageTwo: `${componenteDois}`,
     imageThree: `${componenteTres}`,
     externalLink: 'https://br.pinterest.com/pin/440930619784257841/',
-    pageLink: '/',
+    pageLink: '/manual',
     dataAos: 'zoom-out-down'
   }
 ]
@@ -106,7 +106,7 @@ const Products = () => {
               />
             ))}
           </ul>
-          <Footer />
+          <Footer marginTop="160px" />
         </>
       )}
     </div>

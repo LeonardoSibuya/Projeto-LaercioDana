@@ -29,7 +29,7 @@ const Home = () => {
           <AboutUs />
           <Video />
           <ProductsHome />
-          <Footer />
+          <Footer marginTop="160px" />
         </>
       )}
     </>
