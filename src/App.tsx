@@ -1,11 +1,13 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
-import Home from './Pages/Home'
-import EstiloGlobal from './styles'
 import { Provider } from 'react-redux'
 import { store } from './store'
+
+import EstiloGlobal from './styles'
+
+import Home from './Pages/Home'
 import Products from './Pages/Products'
 import Info from './Pages/Info'
+import Faq from './Pages/Faq'
 
 const rotas = createBrowserRouter([
   {
@@ -19,6 +21,10 @@ const rotas = createBrowserRouter([
   {
     path: '/manual',
     element: <Info />
+  },
+  {
+    path: '/duvidas',
+    element: <Faq />
   }
 ])
 

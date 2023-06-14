@@ -37,7 +37,7 @@ export const TabButton = styled.button<TabButton>`
   text-transform: uppercase;
   letter-spacing: 1px;
   border: none;
-  border-radius: 30px;
+  border-radius: ${(props) => (props.isActive ? '12px' : '2px')};
   padding: 6px 16px;
   text-align: center;
   transition: 0.5s ease;
@@ -45,6 +45,8 @@ export const TabButton = styled.button<TabButton>`
   &:hover {
     transition: 0.5s ease;
     background-color: ${Colors.black};
+    border-radius: 12px;
+    letter-spacing: 2px;
   }
 `
 export const Zoom = styled.img`
@@ -181,5 +183,60 @@ export const ContainerText = styled.div`
     font-weight: bold;
     font-size: 16px;
     line-height: 22px;
+  }
+`
+export const Modal = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  &.visible {
+    display: flex;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.73);
+  }
+`
+export const ModalContent = styled.div`
+  max-width: 960px;
+  position: relative;
+  z-index: 1;
+
+  img {
+    width: 700px;
+    height: 640px;
+    max-width: 100%;
+    display: block;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .closeIcon {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.5s ease;
+
+    &:hover {
+      transition: 0.5s ease;
+      transform: scale(0.8);
+    }
   }
 `

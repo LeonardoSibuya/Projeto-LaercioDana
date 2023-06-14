@@ -62,7 +62,7 @@ const Sidebar = () => {
             </S.LinkItem>
           </li>
           <li>
-            <S.LinkItem to="">
+            <S.LinkItem to="/duvidas">
               <img src={faq} alt="" />
               Dúvidas
             </S.LinkItem>

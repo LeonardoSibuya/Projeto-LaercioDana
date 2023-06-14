@@ -31,7 +31,7 @@ const Footer = ({ marginTop }: Props) => (
             <S.LinkItems to="/manual">Manual</S.LinkItems>
           </li>
           <li>
-            <S.LinkItems to="">Dúvidas</S.LinkItems>
+            <S.LinkItems to="/duvidas">Dúvidas</S.LinkItems>
           </li>
         </S.ListLinks>
         <S.ListSocials>

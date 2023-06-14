@@ -7,12 +7,33 @@ import * as S from './styles'
 import ManualConvencional from '../../images/acessorios/ot-convencional-sf.png'
 import ManualBlocante from '../../images/acessorios/tl-blocante-sf.png'
 import zoom from '../../images/icons/zoom.png'
+import close from '../../images/icons/close.png'
 
 import { Container } from '../../styles'
 import Subtitle from '../Subtitle'
 
+interface ImageEixos {
+  url: string
+}
+
+interface ModalState extends ImageEixos {
+  isVisible: boolean
+}
+
 const Manual = () => {
   const [convencional, setConvencional] = useState(false)
+
+  const [modal, setModal] = useState<ModalState>({
+    isVisible: false,
+    url: 'url'
+  })
+
+  const closeModal = () => {
+    setModal({
+      isVisible: false,
+      url: ''
+    })
+  }
 
   useEffect(() => {
     AOS.init({ duration: 1000 })
@@ -352,7 +373,16 @@ const Manual = () => {
                   </table>
                 </S.TableContainer>
                 <S.ImageEixoContainer>
-                  <S.ImageEixo src={ManualConvencional} alt="" />
+                  <S.ImageEixo
+                    src={ManualConvencional}
+                    alt=""
+                    onClick={() =>
+                      setModal({
+                        isVisible: true,
+                        url: ManualConvencional
+                      })
+                    }
+                  />
                   <span>
                     <S.Zoom src={zoom} alt="" />
                   </span>
@@ -655,7 +685,16 @@ const Manual = () => {
                   </table>
                 </S.TableContainer>
                 <S.ImageEixoContainer>
-                  <S.ImageEixo src={ManualBlocante} alt="" />
+                  <S.ImageEixo
+                    src={ManualBlocante}
+                    alt=""
+                    onClick={() =>
+                      setModal({
+                        isVisible: true,
+                        url: ManualBlocante
+                      })
+                    }
+                  />
                   <span>
                     <S.Zoom src={zoom} alt="" />
                   </span>
@@ -698,6 +737,13 @@ const Manual = () => {
           </div>
         </>
       </Container>
+      <S.Modal className={modal.isVisible ? 'visible' : ''}>
+        <S.ModalContent>
+          <img src={close} alt="" className="closeIcon" onClick={closeModal} />
+          <img src={modal.url} alt="" />
+        </S.ModalContent>
+        <div className="overlay" onClick={closeModal}></div>
+      </S.Modal>
     </S.Section>
   )
 }
