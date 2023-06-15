@@ -7,6 +7,10 @@ export const CarouselContainer = styled.div`
   margin: 0 auto;
   margin-top: 160px;
 
+  @media (max-width: ${breakpoints.tablet}) {
+    display: none;
+  }
+
   .inner {
     display: flex;
     align-items: center;
