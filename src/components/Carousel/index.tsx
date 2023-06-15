@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
-import { useState, useEffect } from 'react'
-import React from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 import * as S from './styles'
 
@@ -21,13 +20,31 @@ const images = [
 ]
 
 const Carousel = () => {
-  const carousel = React.useRef(HTMLElement.arguments)
+  const carousel = useRef<HTMLDivElement | null>(null)
+
   const [widthCarousel, setWidthCarousel] = useState(0)
 
+  // useEffect(() => {
+  //   setWidthCarousel(
+  //     carousel.current?.scrollWidth - carousel.current?.offsetWidth
+  //   )
+  // }, [])
+
   useEffect(() => {
-    setWidthCarousel(
-      carousel.current?.scrollWidth - carousel.current?.offsetWidth
-    )
+    const updateCarouselWidth = () => {
+      if (carousel.current) {
+        const width = carousel.current.offsetWidth
+        setWidthCarousel(width)
+      }
+    }
+
+    updateCarouselWidth()
+
+    window.addEventListener('resize', updateCarouselWidth)
+
+    return () => {
+      window.removeEventListener('resize', updateCarouselWidth)
+    }
   }, [])
 
   return (

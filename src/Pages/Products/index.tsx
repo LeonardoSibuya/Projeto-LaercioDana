@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-import { ContainerProducts } from './styles'
-
 import Loader from '../../components/Loader'
 import Sidebar from '../../components/Sidebar'
 import HeaderSecondayPages from '../../components/HeaderSecondaryPages'
@@ -86,7 +84,7 @@ const Products = () => {
       {showLoader ? (
         <Loader />
       ) : (
-        <ContainerProducts>
+        <>
           <HeaderSecondayPages titlePage="Produtos" />
           <Sidebar />
           <Carousel />
@@ -109,7 +107,7 @@ const Products = () => {
             ))}
           </ul>
           <Footer marginTop="160px" />
-        </ContainerProducts>
+        </>
       )}
     </div>
   )
