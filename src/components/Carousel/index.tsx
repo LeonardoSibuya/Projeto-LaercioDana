@@ -4,31 +4,23 @@ import { useState, useEffect, useRef } from 'react'
 import * as S from './styles'
 
 import carouselOne from '../../images/pecas/peca-nova.png'
-import carouselTwo from '../../images/pecas/eixo-tres.png'
+import carouselTwo from '../../images/pecas/eixo-cinco.png'
 import carouselThree from '../../images/carros/opala-editado.jpg'
 import carouselFour from '../../images/pecas/eixo-home-dois.png'
 import carouselFive from '../../images/pecas/acessorio-novo.png'
-import carouselSix from '../../images/pecas/eixo-cinco.png'
 
 const images = [
   carouselOne,
   carouselTwo,
   carouselThree,
   carouselFour,
-  carouselFive,
-  carouselSix
+  carouselFive
 ]
 
 const Carousel = () => {
   const carousel = useRef<HTMLDivElement | null>(null)
 
   const [widthCarousel, setWidthCarousel] = useState(0)
-
-  // useEffect(() => {
-  //   setWidthCarousel(
-  //     carousel.current?.scrollWidth - carousel.current?.offsetWidth
-  //   )
-  // }, [])
 
   useEffect(() => {
     const updateCarouselWidth = () => {
@@ -58,8 +50,8 @@ const Carousel = () => {
           className="inner"
           drag="x"
           dragConstraints={{ right: widthCarousel, left: -widthCarousel }}
-          initial={{ x: 0 }}
-          animate={{ x: 170 }}
+          initial={{ x: 140 }}
+          animate={{ x: 0 }}
           transition={{ duration: 1 }}
         >
           {images.map((image) => (

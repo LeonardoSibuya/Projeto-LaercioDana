@@ -7,6 +7,11 @@ export const CarouselContainer = styled.div`
   margin: 0 auto;
   margin-top: 160px;
 
+  @media (max-width: ${breakpoints.celphone}) {
+    max-width: 100%;
+    width: 100%;
+  }
+
   .inner {
     display: flex;
     align-items: center;
@@ -16,14 +21,19 @@ export const CarouselContainer = styled.div`
 
   .item {
     img {
-      height: 400px;
-      width: 480px;
+      height: 600px;
+      width: 800px;
       pointer-events: none;
       border-radius: 8px;
       object-fit: cover;
 
+      @media (max-width: ${breakpoints.tablet}) {
+        width: 400px;
+        height: 440px;
+      }
+
       @media (max-width: ${breakpoints.celphone}) {
-        width: 240px;
+        width: 220px;
         height: 320px;
       }
     }
