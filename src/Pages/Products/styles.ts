@@ -8,5 +8,5 @@ export const ContainerProducts = styled.div`
     ${CarouselContainer} {
       display: none;
     }
-}
+  }
 `
