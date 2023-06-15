@@ -36,7 +36,11 @@ const Footer = ({ marginTop }: Props) => (
         </S.ListLinks>
         <S.ListSocials>
           <li>
-            <a href="">
+            <a
+              href="https://www.instagram.com/lr44dana/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={instagram} alt="logo instagram" />
             </a>
           </li>

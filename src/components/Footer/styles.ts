@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Colors } from '../../styles'
+import { Colors, breakpoints } from '../../styles'
 import { Link } from 'react-router-dom'
 
 type MarginTopFooter = {
@@ -18,6 +18,10 @@ export const Footer = styled.footer<MarginTopFooter>`
     font-weight: bold;
     text-align: center;
     margin-top: 40px;
+
+    @media (max-width: ${breakpoints.celphone}) {
+      font-size: 12px;
+    }
   }
 `
 
@@ -30,6 +34,11 @@ export const Content = styled.div`
     max-width: 100%;
     width: 100px;
     height: 100px;
+
+    @media (max-width: ${breakpoints.celphone}) {
+      width: 60px;
+      height: 60px;
+    }
   }
 `
 
@@ -39,11 +48,19 @@ export const ListLinks = styled.ul`
     font-weight: bold;
     font-size: 24px;
     text-align: center;
+
+    @media (max-width: ${breakpoints.celphone}) {
+      font-size: 16px;
+    }
   }
 
   li {
     margin: 16px 0;
     text-align: center;
+
+    @media (max-width: ${breakpoints.celphone}) {
+      margin-bottom: 12px;
+    }
   }
 `
 
@@ -53,6 +70,10 @@ export const LinkItems = styled(Link)`
   font-weight: bold;
   font-size: 14px;
   transition: 0.5s ease;
+
+  @media (max-width: ${breakpoints.celphone}) {
+    font-size: 12px;
+  }
 
   &:hover {
     color: ${Colors.gray};
@@ -67,11 +88,19 @@ export const ListSocials = styled.ul`
   justify-content: center;
   gap: 8px;
 
+  @media (max-width: ${breakpoints.celphone}) {
+    display: block;
+  }
+
   li {
     border-radius: 50%;
     background-color: ${Colors.white};
     width: 36px;
     height: 36px;
+
+    @media (max-width: ${breakpoints.celphone}) {
+      margin-bottom: 12px;
+    }
 
     transition: 0.5s ease;
 

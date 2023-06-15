@@ -375,7 +375,7 @@ const Manual = () => {
                 <S.ImageEixoContainer>
                   <S.ImageEixo
                     src={ManualConvencional}
-                    alt=""
+                    alt="Foto de manual de peça automotiva"
                     onClick={() =>
                       setModal({
                         isVisible: true,
@@ -384,7 +384,7 @@ const Manual = () => {
                     }
                   />
                   <span>
-                    <S.Zoom src={zoom} alt="" />
+                    <S.Zoom src={zoom} alt="icone de zoom" />
                   </span>
                 </S.ImageEixoContainer>
               </S.ContentContainer>
@@ -687,7 +687,7 @@ const Manual = () => {
                 <S.ImageEixoContainer>
                   <S.ImageEixo
                     src={ManualBlocante}
-                    alt=""
+                    alt="Foto de manual de peça automotiva"
                     onClick={() =>
                       setModal({
                         isVisible: true,
@@ -696,7 +696,7 @@ const Manual = () => {
                     }
                   />
                   <span>
-                    <S.Zoom src={zoom} alt="" />
+                    <S.Zoom src={zoom} alt="icone de zoom" />
                   </span>
                 </S.ImageEixoContainer>
               </S.ContentContainer>
@@ -739,8 +739,13 @@ const Manual = () => {
       </Container>
       <S.Modal className={modal.isVisible ? 'visible' : ''}>
         <S.ModalContent>
-          <img src={close} alt="" className="closeIcon" onClick={closeModal} />
-          <img src={modal.url} alt="" />
+          <img
+            src={close}
+            alt="icone de fechar"
+            className="closeIcon"
+            onClick={closeModal}
+          />
+          <img src={modal.url} alt="Foto de manual de peça automotiva" />
         </S.ModalContent>
         <div className="overlay" onClick={closeModal}></div>
       </S.Modal>

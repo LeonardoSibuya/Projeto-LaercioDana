@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Colors } from '../../styles'
+import { Colors, breakpoints } from '../../styles'
 
 export const Content = styled.section`
   margin-top: 160px;
@@ -15,6 +15,10 @@ export const TextDiv = styled.div`
   justify-content: center;
   gap: 24px;
 
+  @media (max-width: ${breakpoints.tablet}) {
+    display: block;
+  }
+
   img {
     max-width: 100%;
     width: 100%;
@@ -29,6 +33,11 @@ export const TextDiv = styled.div`
     max-width: 100%;
     width: 440px;
     height: 100%;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      width: 100%;
+      margin-bottom: 24px;
+    }
   }
 
   p {

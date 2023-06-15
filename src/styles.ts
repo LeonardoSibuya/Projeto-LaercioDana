@@ -11,6 +11,11 @@ export const Colors = {
   cyan: '#099e76'
 }
 
+export const breakpoints = {
+  tablet: '1024px',
+  celphone: '768px'
+}
+
 const EstiloGlobal = createGlobalStyle`
   *{
     margin: 0;
@@ -31,7 +36,7 @@ export const Container = styled.div`
   width: 100%;
   margin: 0 auto;
 
-  @media (max-width: 1024px) {
+  @media (max-width: ${breakpoints.tablet}) {
     max-width: 80%;
   }
 `

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpoints } from '../../styles'
 
 export const CarouselContainer = styled.div`
   width: 100%;
@@ -20,6 +21,11 @@ export const CarouselContainer = styled.div`
       pointer-events: none;
       border-radius: 8px;
       object-fit: cover;
+
+      @media (max-width: ${breakpoints.celphone}) {
+        width: 240px;
+        height: 320px;
+      }
     }
   }
 

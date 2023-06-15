@@ -30,9 +30,9 @@ const FaqItems = ({ text, title }: PropsFaq) => {
             <h4>{title}</h4>
             <span>
               {textVisible ? (
-                <img src={close} alt="" />
+                <img src={close} alt="icone de fechar" />
               ) : (
-                <img src={open} alt="" />
+                <img src={open} alt="icone de abrir" />
               )}
             </span>
           </S.ContainerTitleIcon>

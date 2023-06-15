@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { Colors } from '../../styles'
+import { Colors, breakpoints } from '../../styles'
 
 export const HeaderContainer = styled.header`
   text-align: center;
@@ -10,6 +10,10 @@ export const HeaderContainer = styled.header`
     img {
       width: 140px;
       max-width: 100%;
+
+      @media (max-width: ${breakpoints.tablet}) {
+        width: 100px;
+      }
     }
   }
 

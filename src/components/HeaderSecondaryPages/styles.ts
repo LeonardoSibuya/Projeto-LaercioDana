@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-import { Colors, Container } from '../../styles'
+import { Colors, Container, breakpoints } from '../../styles'
 
 export const HeaderContainer = styled.header`
   background-color: ${Colors.black};
@@ -44,11 +44,19 @@ export const HeaderContainer = styled.header`
     font-size: 32px;
     font-weight: bold;
     font-family: 'Teko', sans-serif;
+
+    @media (max-width: ${breakpoints.celphone}) {
+      font-size: 24px;
+    }
   }
 `
 export const LinkLogo = styled(Link)`
   img {
     width: 80px;
     max-width: 100%;
+
+    @media (max-width: ${breakpoints.celphone}) {
+      width: 60px;
+    }
   }
 `

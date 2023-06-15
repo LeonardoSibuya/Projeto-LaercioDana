@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Colors } from '../../styles'
+import { Colors, breakpoints } from '../../styles'
 
 export const List = styled.ul`
   margin-top: 160px;
@@ -14,6 +14,10 @@ export const Text = styled.p`
   font-weight: bold;
   text-align: center;
   margin-top: 80px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 14px;
+  }
 
   a {
     color: ${Colors.white};

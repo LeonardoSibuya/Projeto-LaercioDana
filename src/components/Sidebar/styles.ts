@@ -100,6 +100,12 @@ export const ContainerTitle = styled.div`
       cursor: pointer;
       max-width: 24px;
       max-height: 24px;
+      transition: 0.5s ease;
+
+      &:hover {
+        transition: 0.5s ease;
+        transform: scale(0.8);
+      }
     }
   }
 `

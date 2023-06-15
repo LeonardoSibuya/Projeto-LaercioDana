@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Colors } from '../../styles'
+import { Colors, breakpoints } from '../../styles'
 import { SubtitleStyle } from '../Subtitle/styles'
 
 type TabButton = {
@@ -26,6 +26,11 @@ export const ContainerButtons = styled.div`
   justify-content: left;
   gap: 24px;
   margin: 16px 0 32px;
+
+  @media (max-width: ${breakpoints.celphone}) {
+    margin-bottom: 16px;
+    justify-content: center;
+  }
 `
 
 export const TabButton = styled.button<TabButton>`
@@ -41,6 +46,11 @@ export const TabButton = styled.button<TabButton>`
   padding: 6px 16px;
   text-align: center;
   transition: 0.5s ease;
+
+  @media (max-width: ${breakpoints.celphone}) {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
 
   &:hover {
     transition: 0.5s ease;
@@ -76,6 +86,10 @@ export const ContentContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    display: block;
+  }
 `
 
 export const ImageEixo = styled.img`
@@ -86,10 +100,19 @@ export const ImageEixo = styled.img`
   cursor: zoom-in;
   transition: 0.5s ease;
 
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 100%;
+    margin-top: 24px;
+  }
+
   &:hover {
     transform: scale(1.2);
     transition: 0.5s ease;
     opacity: 0.3;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      transform: scale(1.1);
+    }
   }
 `
 
@@ -102,6 +125,10 @@ export const TableContainer = styled.div`
   position: relative;
   border: 1px solid black;
   border-right: 0;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    border-right: 1px solid #000;
+  }
 
   ::-webkit-scrollbar {
     width: 16px;
@@ -125,6 +152,10 @@ export const TableContainer = styled.div`
     overflow-x: scroll;
     position: relative;
 
+    @media (max-width: ${breakpoints.celphone}) {
+      padding: 0 6px;
+    }
+
     thead {
       position: sticky;
       top: 0;
@@ -146,6 +177,10 @@ export const TableContainer = styled.div`
         letter-spacing: 1px;
         width: 100%;
         font-family: 'Teko', sans-serif;
+
+        @media (max-width: ${breakpoints.celphone}) {
+          font-size: 14px;
+        }
       }
     }
 
@@ -168,6 +203,10 @@ export const TableContainer = styled.div`
           font-size: 12px;
           font-weight: bold;
           width: 100%;
+
+          @media (max-width: ${breakpoints.celphone}) {
+            font-size: 10px;
+          }
         }
       }
     }
@@ -183,6 +222,10 @@ export const ContainerText = styled.div`
     font-weight: bold;
     font-size: 16px;
     line-height: 22px;
+
+    @media (max-width: ${breakpoints.celphone}) {
+      font-size: 12px;
+    }
   }
 `
 export const Modal = styled.div`
@@ -222,6 +265,11 @@ export const ModalContent = styled.div`
     background-color: #fff;
     padding: 8px;
     border-radius: 8px;
+
+    @media (max-width: ${breakpoints.celphone}) {
+      width: 320px;
+      height: 400px;
+    }
   }
 
   .closeIcon {
@@ -233,6 +281,11 @@ export const ModalContent = styled.div`
     right: 0;
     top: 0;
     transition: 0.5s ease;
+
+    @media (max-width: ${breakpoints.celphone}) {
+      width: 32px;
+      height: 32px;
+    }
 
     &:hover {
       transition: 0.5s ease;

@@ -35,12 +35,25 @@ const ProductsItem = ({
     <Container>
       <S.SectionProduct>
         <S.ContainerImg>
-          <div className="two-images">
-            <img src={imageOne} alt="" data-aos={dataAos} />
-            <img src={imageTwo} alt="" data-aos={dataAos} />
-          </div>
           <div>
-            <img src={imageThree} alt="" data-aos={dataAos} />
+            <img
+              src={imageOne}
+              alt="Foto de peça automotiva"
+              data-aos={dataAos}
+              className="hidden-mobile"
+            />
+            <img
+              src={imageTwo}
+              alt="Foto de peça automotiva"
+              data-aos={dataAos}
+            />
+          </div>
+          <div className="hidden-mobile">
+            <img
+              src={imageThree}
+              alt="Foto de peça automotiva"
+              data-aos={dataAos}
+            />
           </div>
         </S.ContainerImg>
         <S.ContainerText>

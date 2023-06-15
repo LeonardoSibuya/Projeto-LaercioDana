@@ -27,7 +27,11 @@ const Banner = () => {
           </S.Content>
           <S.ListIcons>
             <li>
-              <a href="#">
+              <a
+                href="https://www.instagram.com/lr44dana/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={instagramIcon} alt="icone Instagram" />
               </a>
             </li>
@@ -37,7 +41,7 @@ const Banner = () => {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="mailto=">
                 <img src={outlookIcon} alt="icone Outlook" />
               </a>
             </li>

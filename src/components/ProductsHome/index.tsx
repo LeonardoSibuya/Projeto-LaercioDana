@@ -37,14 +37,14 @@ const ProductsHome = () => {
         <li data-aos="zoom-in-up">
           <S.LinkItems to="/produtos">
             <S.TextImg>OT Convencional</S.TextImg>
-            <img src={eixoConvencional} alt="Peça de carro eixo blocante" />
+            <img src={eixoConvencional} alt="Peça de carro eixo convencional" />
             <span>Compre agora</span>
           </S.LinkItems>
         </li>
         <li data-aos="zoom-in-up">
           <S.LinkItems to="/produtos">
             <S.TextImg>Componentes</S.TextImg>
-            <img src={acessorio} alt="Peça de carro eixo blocante" />
+            <img src={acessorio} alt="Componente de peça de carro" />
             <span>Compre agora</span>
           </S.LinkItems>
         </li>

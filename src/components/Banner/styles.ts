@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import banner from '../../images/carros/opala-capo.jpg'
-import { Colors, Container } from '../../styles'
+import { Colors, Container, breakpoints } from '../../styles'
 
 export const BannerContent = styled.div`
   background-image: url(${banner});
@@ -39,17 +39,42 @@ export const Content = styled.div`
   max-width: 100%;
   width: 100%;
 
+  @media (max-width: ${breakpoints.tablet}) {
+    margin: 60px auto;
+  }
+
   h2 {
     font-weight: bold;
     font-size: 56px;
     letter-spacing: 1px;
     font-family: 'Teko', sans-serif;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      font-size: 40px;
+      max-width: 100%;
+      width: 70%;
+    }
+
+    @media (max-width: ${breakpoints.celphone}) {
+      font-size: 32px;
+      width: 100%;
+    }
   }
 
   p {
     font-size: 16px;
     line-height: 22px;
     margin: 24px 0;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      max-width: 100%;
+      width: 80%;
+    }
+
+    @media (max-width: ${breakpoints.celphone}) {
+      width: 100%;
+      font-size: 12px;
+    }
   }
 `
 

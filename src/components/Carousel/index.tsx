@@ -42,12 +42,12 @@ const Carousel = () => {
           drag="x"
           dragConstraints={{ right: widthCarousel, left: -widthCarousel }}
           initial={{ x: 0 }}
-          animate={{ x: 300 }}
+          animate={{ x: 170 }}
           transition={{ duration: 1 }}
         >
           {images.map((image) => (
             <motion.div className="item" key={image}>
-              <img src={image} alt="texto alt" />
+              <img src={image} alt="fotos de peças automotivas" />
             </motion.div>
           ))}
         </motion.div>

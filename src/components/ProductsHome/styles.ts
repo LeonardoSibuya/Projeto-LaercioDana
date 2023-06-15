@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Colors } from '../../styles'
+import { Colors, breakpoints } from '../../styles'
 import { Link } from 'react-router-dom'
 
 export const DivTitle = styled.div`
@@ -64,11 +64,15 @@ export const LinkItems = styled(Link)`
 `
 
 export const ContentList = styled.ul`
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 36px;
   position: relative;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    grid-template-columns: 1fr;
+  }
 
   li {
     position: relative;
@@ -83,5 +87,9 @@ export const ContentList = styled.ul`
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 2px 2px 6px #000;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      width: 100%;
+    }
   }
 `

@@ -8,6 +8,7 @@ import Sidebar from '../../components/Sidebar'
 import HeaderSecondayPages from '../../components/HeaderSecondaryPages'
 import FaqItems, { PropsFaq } from '../../components/FaqItems'
 import Subtitle from '../../components/Subtitle'
+import { Container } from '../../styles'
 
 const Mock: PropsFaq[] = [
   {
@@ -39,6 +40,11 @@ const Mock: PropsFaq[] = [
     id: 7,
     title: 'Condição dos componentes',
     text: 'lorafoafoamfoagmog'
+  },
+  {
+    id: 8,
+    title: 'Nos siga no Instagram',
+    text: `Para não perder nenhuma novidade e promoções, siga agora no Instagram`
   }
 ]
 
@@ -69,11 +75,13 @@ const Faq = () => {
               </li>
             ))}
           </S.List>
-          <S.Text>
-            Caso ainda tenha dúvidas,
-            <a href=""> entre em contato agora mesmo! </a>Estamos sempre a
-            disposição para atende-los.
-          </S.Text>
+          <Container>
+            <S.Text>
+              Caso ainda tenha dúvidas,
+              <a href=""> entre em contato agora mesmo! </a>Estamos sempre a
+              disposição para atende-los.
+            </S.Text>
+          </Container>
           <Footer marginTop="160px" />
         </>
       )}

@@ -45,25 +45,25 @@ const Sidebar = () => {
         <ul>
           <li>
             <S.LinkItem to="/">
-              <img src={homeIcon} alt="" />
+              <img src={homeIcon} alt="icone de home page" />
               Pagina Inicial
             </S.LinkItem>
           </li>
           <li>
             <S.LinkItem to="/produtos">
-              <img src={cart} alt="" />
+              <img src={cart} alt="icone de carrinho de compras" />
               Produtos
             </S.LinkItem>
           </li>
           <li>
             <S.LinkItem to="/manual">
-              <img src={info} alt="" />
+              <img src={info} alt="icone de informação" />
               Manual
             </S.LinkItem>
           </li>
           <li>
             <S.LinkItem to="/duvidas">
-              <img src={faq} alt="" />
+              <img src={faq} alt="icone de interrogação" />
               Dúvidas
             </S.LinkItem>
           </li>

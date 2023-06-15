@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Colors } from '../../styles'
+import { Colors, breakpoints } from '../../styles'
 
 export const SectionProduct = styled.section`
   margin: 160px 0;
@@ -9,6 +9,10 @@ export const SectionProduct = styled.section`
   justify-content: center;
   align-items: start;
   gap: 32px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    display: block;
+  }
 `
 export const ContainerImg = styled.div`
   display: flex;
@@ -22,6 +26,15 @@ export const ContainerImg = styled.div`
     align-items: center;
     justify-content: center;
     gap: 12px;
+
+    @media (max-width: ${breakpoints.celphone}) {
+      display: block;
+      width: 100%;
+
+      &.hidden-mobile {
+        display: none;
+      }
+    }
   }
 
   img {
@@ -38,10 +51,20 @@ export const ContainerImg = styled.div`
     border-radius: 16%;
     object-fit: cover;
     box-shadow: 0px 0px 16px #000;
+
+    @media (max-width: ${breakpoints.celphone}) {
+      width: 100%;
+      border-radius: 8px;
+
+      &.hidden-mobile {
+        display: none;
+      }
+    }
   }
 `
 export const ContainerText = styled.div`
   color: ${Colors.white};
+  margin-top: 32px;
 
   p {
     margin: 16px 0;
@@ -50,6 +73,10 @@ export const ContainerText = styled.div`
     line-height: 22px;
     text-align: justify;
     font-size: 16px;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      width: 100%;
+    }
   }
 
   span {
