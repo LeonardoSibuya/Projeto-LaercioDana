@@ -14,8 +14,8 @@ export const TextImg = styled.h4`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: ${Colors.white};
   letter-spacing: 1px;
+  color: ${Colors.white};
   text-shadow: 2px 1px 3px #000;
   font-size: 40px;
   font-weight: bold;
