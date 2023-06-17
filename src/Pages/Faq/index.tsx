@@ -9,6 +9,7 @@ import HeaderSecondayPages from '../../components/HeaderSecondaryPages'
 import FaqItems, { PropsFaq } from '../../components/FaqItems'
 import Subtitle from '../../components/Subtitle'
 import { Container } from '../../styles'
+import Whatsapp from '../../components/Whatsapp'
 
 const Mock: PropsFaq[] = [
   {
@@ -83,6 +84,7 @@ const Faq = () => {
             </S.Text>
           </Container>
           <Footer marginTop="160px" />
+          <Whatsapp />
         </>
       )}
     </>

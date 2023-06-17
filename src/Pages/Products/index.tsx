@@ -20,6 +20,7 @@ import convencionalTres from '../../images/pecas/eixo-tres-sf.png'
 import componenteUm from '../../images/acessorios/acessorio-um-sf.png'
 import componenteDois from '../../images/acessorios/acessorios.png'
 import componenteTres from '../../images/acessorios/rolamento-sf.png'
+import Whatsapp from '../../components/Whatsapp'
 
 const Mock: PropsProducts[] = [
   {
@@ -107,6 +108,7 @@ const Products = () => {
             ))}
           </ul>
           <Footer marginTop="160px" />
+          <Whatsapp />
         </>
       )}
     </div>

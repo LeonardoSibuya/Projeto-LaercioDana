@@ -5,6 +5,7 @@ import Loader from '../../components/Loader'
 import Sidebar from '../../components/Sidebar'
 import Manual from '../../components/Manual'
 import Footer from '../../components/Footer'
+import Whatsapp from '../../components/Whatsapp'
 
 const Info = () => {
   const [showLoader, setShowLoader] = useState(true)
@@ -27,6 +28,7 @@ const Info = () => {
           <Sidebar />
           <Manual />
           <Footer marginTop="0" />
+          <Whatsapp />
         </>
       )}
     </div>

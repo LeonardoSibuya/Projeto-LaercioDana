@@ -6,6 +6,7 @@ import ProductsHome from '../../components/ProductsHome'
 import Sidebar from '../../components/Sidebar'
 import Video from '../../components/Video'
 import Loader from '../../components/Loader'
+import Whatsapp from '../../components/Whatsapp'
 
 const Home = () => {
   const [showLoader, setShowLoader] = useState(true)
@@ -30,6 +31,7 @@ const Home = () => {
           <Video />
           <ProductsHome />
           <Footer marginTop="160px" />
+          <Whatsapp />
         </>
       )}
     </>
