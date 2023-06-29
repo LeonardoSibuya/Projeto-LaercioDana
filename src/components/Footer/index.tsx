@@ -37,7 +37,7 @@ const Footer = ({ marginTop }: Props) => (
         <S.ListSocials>
           <li>
             <a
-              href="https://www.instagram.com/lr44dana/"
+              href="https://www.instagram.com/lreixos"
               target="_blank"
               rel="noreferrer"
             >
@@ -50,7 +50,7 @@ const Footer = ({ marginTop }: Props) => (
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="mailto:lreixos@outlook.com.br">
               <img src={outlook} alt="logo outlook" />
             </a>
           </li>

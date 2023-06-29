@@ -12,11 +12,19 @@ import close from '../../images/icons/closeFaq.png'
 export type PropsFaq = {
   title: string
   text: string
+  link?: string
+  externalLink?: string
   id?: number
 }
 
-const FaqItems = ({ text, title }: PropsFaq) => {
+const FaqItems = ({ text, title, link, externalLink }: PropsFaq) => {
   const [textVisible, setTextVisible] = useState(false)
+
+  const handleToggleText = () => {
+    setTimeout(() => {
+      setTextVisible(!textVisible)
+    }, 200)
+  }
 
   useEffect(() => {
     AOS.init({ duration: 1000 })
@@ -26,7 +34,7 @@ const FaqItems = ({ text, title }: PropsFaq) => {
     <section>
       <Container>
         <S.ContainerPill data-aos="fade-right">
-          <S.ContainerTitleIcon onClick={() => setTextVisible(!textVisible)}>
+          <S.ContainerTitleIcon onClick={handleToggleText}>
             <h4>{title}</h4>
             <span>
               {textVisible ? (
@@ -37,7 +45,12 @@ const FaqItems = ({ text, title }: PropsFaq) => {
             </span>
           </S.ContainerTitleIcon>
           <div>
-            <p className={textVisible ? 'visible' : ''}>{text}</p>
+            <p className={textVisible ? 'visible' : ''}>
+              {text}
+              <a href={externalLink} target="_blank" rel="noreferrer">
+                {link}
+              </a>
+            </p>
           </div>
         </S.ContainerPill>
       </Container>

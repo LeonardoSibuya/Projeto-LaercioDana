@@ -11,6 +11,7 @@ export const ContainerPill = styled.div`
   );
   padding: 24px;
   border-radius: 32px;
+  overflow: hidden;
 
   p {
     line-height: 26px;
@@ -18,13 +19,50 @@ export const ContainerPill = styled.div`
     text-align: justify;
     display: none;
     margin-top: 16px;
+    padding-right: 24px;
+    transition: height, 0.9s ease;
 
     @media (max-width: ${breakpoints.celphone}) {
       font-size: 12px;
+      padding-right: 0px;
     }
 
     &.visible {
       display: block;
+      max-height: 1000px;
+      transition: height, 0.9s ease;
+    }
+
+    a {
+      background-color: ${Colors.cyan};
+      font-size: 12px;
+      color: ${Colors.white};
+      font-weight: bold;
+      font-family: 'Teko', sans-serif;
+      cursor: pointer;
+      transition: 0.5s ease;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 8px;
+      display: block;
+      text-align: center;
+      width: 80px;
+      margin-top: 16px;
+
+      &:hover {
+        background-color: ${Colors.white};
+        color: ${Colors.cyan};
+        transition: 0.5s ease;
+      }
+
+      @media (max-width: 1024px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
     }
   }
 `

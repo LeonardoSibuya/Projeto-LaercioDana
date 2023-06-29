@@ -15,37 +15,31 @@ const Mock: PropsFaq[] = [
   {
     id: 1,
     title: 'Como comprar',
-    text: 'lorafoafoamfoagmog'
+    text: 'Realizamos vendas diretamente pelo WhatsApp e estamos sempre prontos para atendê-lo. Entre em contato agora mesmo e garanta seus produtos de forma rápida e prática!',
+    link: 'WhatsApp',
+    externalLink: 'https://www.instagram.com/lreixos'
   },
   {
     id: 2,
-    title: 'Entrega / Retirada',
-    text: 'lorafoafoamfoagmog'
+    title: 'Como retirar',
+    text: 'Oferecemos exclusivamente retirada em nossa loja física em São José dos Campos. Venha pessoalmente e confira nossos eixos Dana 44 com garantia de qualidade!'
+  },
+  {
+    id: 3,
+    title: 'Formas de pagamento',
+    text: 'Facilitamos sua experiência! Aceitamos pagamentos com cartões de crédito, débito e Pix. Na hora de retirar suas peças em nossa loja em São José dos Campos, você pode escolher a opção de pagamento que mais se adequa às suas necessidades.'
   },
   {
     id: 4,
-    title: 'Formas de pagamento',
-    text: 'lorafoafoamfoagmog'
+    title: 'Condição dos eixos e componentes',
+    text: 'Garantimos a qualidade! Trabalhamos exclusivamente com eixos e seus componentes 100% novos e originais, proporcionando confiabilidade e desempenho excepcionais para o seu veículo..'
   },
   {
     id: 5,
-    title: 'Localização',
-    text: 'lorafoafoamfoagmog'
-  },
-  {
-    id: 6,
-    title: 'Condição dos eixos',
-    text: 'lorafoafoamfoagmog'
-  },
-  {
-    id: 7,
-    title: 'Condição dos componentes',
-    text: 'lorafoafoamfoagmog'
-  },
-  {
-    id: 8,
     title: 'Nos siga no Instagram',
-    text: `Para não perder nenhuma novidade e promoções, siga agora no Instagram`
+    text: 'Fique por dentro das novidades e promoções! Siga-nos no Instagram para não perder nenhum detalhe. Seja o primeiro a saber sobre nossos produtos e ofertas imperdíveis!',
+    link: '@lreixos',
+    externalLink: 'https://www.instagram.com/lreixos'
   }
 ]
 
@@ -72,7 +66,12 @@ const Faq = () => {
           <S.List>
             {Mock.map((item) => (
               <li key={item.id}>
-                <FaqItems text={item.text} title={item.title} />
+                <FaqItems
+                  text={item.text}
+                  title={item.title}
+                  link={item.link}
+                  externalLink={item.externalLink}
+                />
               </li>
             ))}
           </S.List>

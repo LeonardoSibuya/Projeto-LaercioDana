@@ -70,7 +70,7 @@ const Sidebar = () => {
         </ul>
         <S.ContactContainer>
           <a href="#">(11) 99999-9999</a>
-          <a href="#">laerciodana@outlook.com</a>
+          <a href="mailto:lreixos@outlook.com.br">lreixos@outlook.com.br</a>
         </S.ContactContainer>
       </S.SideBarContainer>
     </S.ContentDiv>
