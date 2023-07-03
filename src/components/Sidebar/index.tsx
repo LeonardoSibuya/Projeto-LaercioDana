@@ -69,7 +69,13 @@ const Sidebar = () => {
           </li>
         </ul>
         <S.ContactContainer>
-          <a href="#">(11) 99999-9999</a>
+          <a
+            href="https://api.whatsapp.com/message/R473PNFS4JIEI1?autoload=1&app_absent=0"
+            target="_blank"
+            rel="noreferrer"
+          >
+            (12) 98879-2464
+          </a>
           <a href="mailto:lreixos@outlook.com.br">lreixos@outlook.com.br</a>
         </S.ContactContainer>
       </S.SideBarContainer>

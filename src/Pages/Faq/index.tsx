@@ -17,7 +17,8 @@ const Mock: PropsFaq[] = [
     title: 'Como comprar',
     text: 'Realizamos vendas diretamente pelo WhatsApp e estamos sempre prontos para atendê-lo. Entre em contato agora mesmo e garanta seus produtos de forma rápida e prática!',
     link: 'WhatsApp',
-    externalLink: 'https://www.instagram.com/lreixos'
+    externalLink:
+      'https://api.whatsapp.com/message/R473PNFS4JIEI1?autoload=1&app_absent=0'
   },
   {
     id: 2,
@@ -78,8 +79,15 @@ const Faq = () => {
           <Container>
             <S.Text>
               Caso ainda tenha dúvidas,
-              <a href=""> entre em contato agora mesmo! </a>Estamos sempre a
-              disposição para atende-los.
+              <a
+                href="https://api.whatsapp.com/message/R473PNFS4JIEI1?autoload=1&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                {' '}
+                entre em contato agora mesmo!{' '}
+              </a>
+              Estamos sempre a disposição para atende-los.
             </S.Text>
           </Container>
           <Footer marginTop="160px" />

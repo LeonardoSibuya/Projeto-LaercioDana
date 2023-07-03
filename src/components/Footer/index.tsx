@@ -45,7 +45,11 @@ const Footer = ({ marginTop }: Props) => (
             </a>
           </li>
           <li>
-            <a href="">
+            <a
+              href="https://api.whatsapp.com/message/R473PNFS4JIEI1?autoload=1&app_absent=0"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={whatsapp} alt="logo whatsapp" />
             </a>
           </li>

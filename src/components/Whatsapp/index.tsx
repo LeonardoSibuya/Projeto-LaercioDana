@@ -13,8 +13,12 @@ const Whatsapp = () => {
 
   return (
     <Content data-aos="zoom-in-up">
-      <a href="">
-        <img src={wpp} alt="" />
+      <a
+        href="https://api.whatsapp.com/message/R473PNFS4JIEI1?autoload=1&app_absent=0"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img src={wpp} alt="Logo WhatsApp" />
       </a>
     </Content>
   )

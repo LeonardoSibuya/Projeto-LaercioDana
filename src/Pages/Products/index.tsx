@@ -31,7 +31,8 @@ const Mock: PropsProducts[] = [
     imageOne: `${blocanteUm}`,
     imageTwo: `${blocanteDois}`,
     imageThree: `${blocanteTres}`,
-    externalLink: 'https://br.pinterest.com/pin/440930619784257841/',
+    externalLink:
+      'https://api.whatsapp.com/message/R473PNFS4JIEI1?autoload=1&app_absent=0',
     pageLink: '/manual',
     price: 'R$ 12.400,00',
     oldPrice: 'R$ 13.000,00',
@@ -45,7 +46,8 @@ const Mock: PropsProducts[] = [
     imageOne: `${convencionalUm}`,
     imageTwo: `${convencionalDois}`,
     imageThree: `${convencionalTres}`,
-    externalLink: 'https://br.pinterest.com/pin/440930619784257841/',
+    externalLink:
+      'https://api.whatsapp.com/message/R473PNFS4JIEI1?autoload=1&app_absent=0',
     pageLink: '/manual',
     price: 'R$ R$ 9.200,00',
     oldPrice: 'R$ 10.000,00',
@@ -59,7 +61,8 @@ const Mock: PropsProducts[] = [
     imageOne: `${componenteUm}`,
     imageTwo: `${componenteDois}`,
     imageThree: `${componenteTres}`,
-    externalLink: 'https://br.pinterest.com/pin/440930619784257841/',
+    externalLink:
+      'https://api.whatsapp.com/message/R473PNFS4JIEI1?autoload=1&app_absent=0',
     pageLink: '/manual',
     dataAos: 'zoom-out-down'
   }
