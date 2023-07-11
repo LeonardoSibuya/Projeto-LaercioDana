@@ -34,7 +34,7 @@ const Mock: PropsProducts[] = [
     externalLink:
       'https://api.whatsapp.com/message/R473PNFS4JIEI1?autoload=1&app_absent=0',
     pageLink: '/manual',
-    price: 'R$ 12.400,00',
+    price: 'R$ 11.800,00',
     oldPrice: 'R$ 13.000,00',
     dataAos: 'zoom-out-down'
   },
@@ -49,7 +49,7 @@ const Mock: PropsProducts[] = [
     externalLink:
       'https://api.whatsapp.com/message/R473PNFS4JIEI1?autoload=1&app_absent=0',
     pageLink: '/manual',
-    price: 'R$ R$ 9.200,00',
+    price: 'R$ R$ 7.900,00',
     oldPrice: 'R$ 10.000,00',
     dataAos: 'zoom-out-down'
   },

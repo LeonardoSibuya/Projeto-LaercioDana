@@ -15,10 +15,10 @@ const Banner = () => {
         <Container>
           <Header />
           <S.Content>
-            <h2>Somos especializados em eixos Dana 44</h2>
+            <h2>Somos especializados em eixos Dana</h2>
             <p>
-              Trabalhamos com os melhores eixos Dana 44 do mercado, Spicer,
-              Dana, rolamentos Tinken e retentores sabó para eixos. <br />
+              Trabalhamos com os melhores eixos do mercado, e marcas renomadas
+              como Spicer, Dana, Timken e sabó para eixos. <br />
               Vendemos também seus componentes separadamente.
             </p>
             <ButtonComponent

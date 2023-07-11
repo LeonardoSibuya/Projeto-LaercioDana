@@ -705,33 +705,33 @@ const Manual = () => {
           <div>
             <S.ContainerText>
               <Subtitle>Informações técnicas</Subtitle>
-              <p data-aos="fade-right">Código Dana 10055774</p>
-              <p data-aos="fade-right">Modelo eixo Dana 44-3 (M216)</p>
+              <p data-aos="fade-right">Código Dana 10055774.</p>
+              <p data-aos="fade-right">Modelo eixo Dana 44-3 (M216).</p>
               <p data-aos="fade-right">
                 Não acompanha conjunto de freio e suportes de fixação da
-                suspensão
+                suspensão.
               </p>
-              <p data-aos="fade-right">Relação 3,07:1</p>
-              <p data-aos="fade-right">Tipo convencional e blocante</p>
-              <p data-aos="fade-right">Semi-flutuante</p>
+              <p data-aos="fade-right">Relação 3,07:1.</p>
+              <p data-aos="fade-right">Tipo convencional e blocante.</p>
+              <p data-aos="fade-right">Semi-flutuante.</p>
               <p data-aos="fade-right">
                 Furação de roda 5 furos, Diâmetro 114,3mm, não Incluso
-                prisioneiros de roda
+                prisioneiros de roda.
               </p>
               <p data-aos="fade-right">
-                Distância entre flanges de freio 1302,80mm
+                Distância entre flanges de freio 1302,80mm.
               </p>
               <p data-aos="fade-right">
                 Acoplamento com eixo cardan: Terminal série 1330 (Cruzeta
-                5-273XS)
+                5-273XS).
               </p>
               <p data-aos="fade-right">
-                Diâmetro dos tubos 70mm, Espessura 8,3mm
+                Diâmetro dos tubos 70mm, Espessura 8,3mm.
               </p>
               <p data-aos="fade-right">
                 Aplicações: Opala, Maverick, para as demais aplicações e
                 adequações necessárias para instalação do eixo em seu veículo
-                consulte o seu mecânico especializado
+                consulte o seu mecânico especializado.
               </p>
             </S.ContainerText>
           </div>
